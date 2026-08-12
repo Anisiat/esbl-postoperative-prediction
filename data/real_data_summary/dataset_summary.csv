@@ -1,0 +1,8 @@
+metric,value
+n_rows,2589.0
+n_columns,28.0
+n_unique_patients,2238.0
+n_exact_duplicate_rows,0.0
+n_outcome_observed,2589.0
+n_outcome_positive,893.0
+outcome_prevalence,0.34492081884897646
