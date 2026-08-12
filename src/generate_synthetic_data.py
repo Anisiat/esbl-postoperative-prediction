@@ -29,6 +29,7 @@ DEFAULT_SUMMARY_DIR = PROJECT_ROOT / "data" / "real_data_summary"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "data" / "synthetic_data.csv"
 DEFAULT_COEFFICIENT_PATH = DEFAULT_SUMMARY_DIR / "logistic_coefficients.csv"
 DEFAULT_DEPENDENCY_PATH = DEFAULT_SUMMARY_DIR / "dependency_correlations.csv"
+DEFAULT_PAIRWISE_PATH = DEFAULT_SUMMARY_DIR / "categorical_pairwise_summary.csv"
 MISSING_LABEL = "__MISSING__"
 OUTCOME_COLUMN = "esbl_status"
 
@@ -89,6 +90,54 @@ def exact_categorical_sample(
             f"({len(values)} != {n_rows})."
         )
     return shuffled(values, rng)
+
+
+def apply_categorical_pairs(
+    columns: dict[str, list[Any]],
+    pairwise_path: Path,
+    n_rows: int,
+    rng: random.Random,
+) -> None:
+    """Replace independent categories with exact selected joint counts."""
+    if not pairwise_path.exists():
+        return
+
+    rows = read_csv(pairwise_path)
+    required = {
+        "variable_1", "category_1", "variable_2", "category_2", "count"
+    }
+    if not required.issubset(rows[0]):
+        raise ValueError(
+            "Pairwise CSV must contain variable/category columns and count."
+        )
+
+    groups: dict[tuple[str, str], list[dict[str, str]]] = {}
+    for row in rows:
+        groups.setdefault((row["variable_1"], row["variable_2"]), []).append(row)
+
+    used_variables: set[str] = set()
+    for (first, second), pair_rows in groups.items():
+        if first in used_variables or second in used_variables:
+            raise ValueError("Categorical pairs must not share variables.")
+        if first not in columns or second not in columns:
+            raise ValueError(f"Unknown categorical pair: {first}, {second}.")
+
+        paired_values: list[tuple[Any, Any]] = []
+        for row in pair_rows:
+            first_value = None if row["category_1"] == MISSING_LABEL else row["category_1"]
+            second_value = None if row["category_2"] == MISSING_LABEL else row["category_2"]
+            paired_values.extend(
+                [(first_value, second_value)] * int(row["count"])
+            )
+        if len(paired_values) != n_rows:
+            raise ValueError(
+                f"Joint counts for {first}/{second} do not sum to {n_rows}."
+            )
+
+        rng.shuffle(paired_values)
+        columns[first] = [value[0] for value in paired_values]
+        columns[second] = [value[1] for value in paired_values]
+        used_variables.update((first, second))
 
 
 def interpolate_quantiles(summary: dict[str, str], probability: float) -> float:
@@ -212,28 +261,41 @@ def apply_rank_dependencies(
         return
 
     rows = read_csv(correlations_path)
-    required = {"variable_1", "variable_2", "correlation"}
-    if not required.issubset(rows[0]):
+    long_format = {"variable_1", "variable_2", "correlation"}.issubset(rows[0])
+    if long_format:
+        # Compatibility with summary bundles created by the earlier script.
+        all_variables = sorted({row["variable_1"] for row in rows})
+    elif "variable" in rows[0]:
+        all_variables = [name for name in rows[0] if name != "variable"]
+    else:
         raise ValueError(
-            "Dependency CSV must contain variable_1, variable_2 and correlation."
+            "Dependency CSV must be a square matrix with a 'variable' column."
         )
 
-    variables = sorted(
-        {
-            row["variable_1"]
-            for row in rows
-            if row["variable_1"].removeprefix("__missing__") in columns
-        }
-    )
+    variables = [
+        variable
+        for variable in all_variables
+        if variable.removeprefix("__missing__") in columns
+    ]
     if not variables:
         return
 
     positions = {name: index for index, name in enumerate(variables)}
     matrix = np.eye(len(variables))
-    for row in rows:
-        first, second = row["variable_1"], row["variable_2"]
-        if first in positions and second in positions:
-            matrix[positions[first], positions[second]] = float(row["correlation"])
+    if long_format:
+        for row in rows:
+            first, second = row["variable_1"], row["variable_2"]
+            if first in positions and second in positions:
+                matrix[positions[first], positions[second]] = float(
+                    row["correlation"]
+                )
+    else:
+        for row in rows:
+            first = row["variable"]
+            if first not in positions:
+                continue
+            for second in variables:
+                matrix[positions[first], positions[second]] = float(row[second])
 
     matrix = nearest_correlation(matrix)
     n_rows = len(next(iter(columns.values())))
@@ -404,6 +466,7 @@ def build_dataset(
     seed: int,
     start_date: date,
     end_date: date,
+    pairwise_path: Path | None = None,
 ) -> tuple[list[str], list[dict[str, Any]]]:
     """Build synthetic records from aggregate summaries and model coefficients."""
     dataset_summary = read_csv(summary_dir / "dataset_summary.csv")
@@ -429,6 +492,15 @@ def build_dataset(
     columns: dict[str, list[Any]] = {}
     for variable, rows in categorical_groups.items():
         columns[variable] = exact_categorical_sample(rows, n_rows, rng)
+
+    # Selected pairs are sampled jointly, preserving both their crosstab and
+    # the exact one-variable category counts.
+    apply_categorical_pairs(
+        columns,
+        pairwise_path or summary_dir / "categorical_pairwise_summary.csv",
+        n_rows,
+        rng,
+    )
 
     for summary in continuous_summary:
         variable = summary["variable"]
@@ -518,6 +590,12 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_DEPENDENCY_PATH,
         help="Optional CSV of Spearman predictor and missingness correlations.",
     )
+    parser.add_argument(
+        "--categorical-pairs",
+        type=Path,
+        default=DEFAULT_PAIRWISE_PATH,
+        help="Optional CSV of selected categorical pair counts.",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_PATH)
     parser.add_argument("--seed", type=int, default=2026)
     parser.add_argument(
@@ -542,6 +620,7 @@ def main() -> None:
         summary_dir=args.summary_dir,
         coefficients_path=args.coefficients,
         correlations_path=args.correlations,
+        pairwise_path=args.categorical_pairs,
         seed=args.seed,
         start_date=args.start_date,
         end_date=args.end_date,

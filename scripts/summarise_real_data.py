@@ -38,6 +38,13 @@ DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "config.yaml"
 INPUT_PATH = PROJECT_ROOT / "data" / "processed" / "lr_data.csv"
 OUTPUT_DIR = PROJECT_ROOT / "outputs" / "real_data_summary"
 
+# These clinically useful pairs are disjoint, which lets the synthetic-data
+# generator reproduce both tables exactly without a complex joint model.
+CATEGORICAL_PAIRS = (
+    ("site", "organism_bug"),
+    ("tfc", "prophylaxis_group"),
+)
+
 
 # ---------------------------------------------------------------------------
 # Loading and configuration
@@ -233,6 +240,31 @@ def summarise_categorical_columns(
     return pd.concat(summaries, ignore_index=True)
 
 
+def summarise_categorical_pairs(
+    df: pd.DataFrame,
+    pairs: tuple[tuple[str, str], ...],
+) -> pd.DataFrame:
+    """Return joint counts for selected categorical predictor pairs."""
+    summaries: list[pd.DataFrame] = []
+    for first, second in pairs:
+        pair = df[[first, second]].astype("object").where(
+            df[[first, second]].notna(),
+            "__MISSING__",
+        )
+        summary = (
+            pair.value_counts(dropna=False)
+            .rename("count")
+            .reset_index()
+            .rename(columns={first: "category_1", second: "category_2"})
+        )
+        summary.insert(0, "variable_2", second)
+        summary.insert(0, "variable_1", first)
+        summary["proportion"] = summary["count"] / len(df)
+        summaries.append(summary)
+
+    return pd.concat(summaries, ignore_index=True)
+
+
 def summarise_missingness(
     df: pd.DataFrame,
 ) -> pd.DataFrame:
@@ -279,15 +311,9 @@ def summarise_dependencies(
     for column in correlation.columns:
         correlation.loc[column, column] = 1.0
 
-    return (
-        correlation.rename_axis("variable_1")
-        .reset_index()
-        .melt(
-            id_vars="variable_1",
-            var_name="variable_2",
-            value_name="correlation",
-        )
-    )
+    # Keeping one variable per row and column makes the exported file directly
+    # readable as a conventional square correlation matrix.
+    return correlation.rename_axis("variable").reset_index()
 
 
 # ---------------------------------------------------------------------------
@@ -347,6 +373,11 @@ def main() -> None:
         ),
     )
 
+    categorical_pair_summary = summarise_categorical_pairs(
+        df=df,
+        pairs=CATEGORICAL_PAIRS,
+    )
+
     missingness_summary = summarise_missingness(df)
 
     dependency_summary = summarise_dependencies(
@@ -371,6 +402,12 @@ def main() -> None:
     save_summary(
         categorical_summary,
         "categorical_summary.csv",
+        OUTPUT_DIR,
+    )
+
+    save_summary(
+        categorical_pair_summary,
+        "categorical_pairwise_summary.csv",
         OUTPUT_DIR,
     )
 

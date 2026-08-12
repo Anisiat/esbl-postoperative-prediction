@@ -10,23 +10,136 @@ from pathlib import Path
 
 import pandas as pd
 
-from summarise_real_data import (
-    load_data,
-    save_summary,
-    summarise_categorical_columns,
-    summarise_continuous_columns,
-    summarise_dataset,
-    summarise_dependencies,
-    summarise_missingness,
-)
-
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT_PATH = PROJECT_ROOT / "data" / "synthetic_data.csv"
 DEFAULT_REFERENCE_DIR = PROJECT_ROOT / "data" / "real_data_summary"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "outputs" / "synthetic_data_summary"
 OUTCOME_COLUMN = "esbl_status"
 PATIENT_ID_COLUMN = "subject"
+CATEGORICAL_PAIRS = (
+    ("site", "organism_bug"),
+    ("tfc", "prophylaxis_group"),
+)
+
+
+def load_data(path: Path) -> pd.DataFrame:
+    """Load a non-empty synthetic CSV."""
+    if not path.exists():
+        raise FileNotFoundError(f"Synthetic dataset not found: {path}")
+    frame = pd.read_csv(path)
+    if frame.empty:
+        raise ValueError("The synthetic dataset is empty.")
+    return frame
+
+
+def summarise_dataset(frame: pd.DataFrame) -> pd.DataFrame:
+    """Summarise dataset size, patients and outcome."""
+    outcome = pd.to_numeric(frame[OUTCOME_COLUMN], errors="coerce")
+    values = {
+        "n_rows": len(frame),
+        "n_columns": frame.shape[1],
+        "n_unique_patients": frame[PATIENT_ID_COLUMN].nunique(dropna=True),
+        "n_exact_duplicate_rows": int(frame.duplicated().sum()),
+        "n_outcome_observed": int(outcome.notna().sum()),
+        "n_outcome_positive": float(outcome.sum()),
+        "outcome_prevalence": float(outcome.mean()),
+    }
+    return pd.DataFrame({"metric": values.keys(), "value": values.values()})
+
+
+def summarise_continuous(
+    frame: pd.DataFrame, columns: list[str]
+) -> pd.DataFrame:
+    """Create the same continuous summary produced inside iCARE."""
+    numeric = frame[columns].apply(pd.to_numeric, errors="coerce")
+    summary = (
+        numeric.describe(percentiles=[0.05, 0.25, 0.50, 0.75, 0.95])
+        .T.reset_index()
+        .rename(columns={
+            "index": "variable", "5%": "p05", "25%": "q1",
+            "50%": "median", "75%": "q3", "95%": "p95",
+        })
+    )
+    summary["missing_count"] = summary["variable"].map(frame[columns].isna().sum())
+    summary["missing_rate"] = summary["variable"].map(frame[columns].isna().mean())
+    summary["skewness"] = summary["variable"].map(numeric.skew())
+    return summary
+
+
+def categorical_values(frame: pd.DataFrame, column: str) -> pd.Series:
+    """Replace missing categories with the same explicit summary label."""
+    return frame[column].astype("object").where(
+        frame[column].notna(), "__MISSING__"
+    )
+
+
+def summarise_categorical(
+    frame: pd.DataFrame, columns: list[str]
+) -> pd.DataFrame:
+    """Summarise the frequency of every category."""
+    summaries = []
+    for column in columns:
+        summary = (
+            categorical_values(frame, column).value_counts(dropna=False)
+            .rename_axis("category").reset_index(name="count")
+        )
+        summary.insert(0, "variable", column)
+        summary["proportion"] = summary["count"] / len(frame)
+        summaries.append(summary)
+    return pd.concat(summaries, ignore_index=True)
+
+
+def summarise_pairs(frame: pd.DataFrame) -> pd.DataFrame:
+    """Create joint count tables for the selected categorical pairs."""
+    summaries = []
+    for first, second in CATEGORICAL_PAIRS:
+        pair = pd.DataFrame({
+            first: categorical_values(frame, first),
+            second: categorical_values(frame, second),
+        })
+        summary = (
+            pair.value_counts(dropna=False).rename("count").reset_index()
+            .rename(columns={first: "category_1", second: "category_2"})
+        )
+        summary.insert(0, "variable_2", second)
+        summary.insert(0, "variable_1", first)
+        summary["proportion"] = summary["count"] / len(frame)
+        summaries.append(summary)
+    return pd.concat(summaries, ignore_index=True)
+
+
+def summarise_missingness(frame: pd.DataFrame) -> pd.DataFrame:
+    """Summarise dtype and missingness for each column."""
+    return pd.DataFrame({
+        "variable": frame.columns,
+        "dtype": frame.dtypes.astype(str).values,
+        "missing_count": frame.isna().sum().values,
+        "missing_rate": frame.isna().mean().values,
+    }).sort_values(["missing_rate", "variable"], ascending=[False, True])
+
+
+def summarise_dependencies(
+    frame: pd.DataFrame, columns: list[str]
+) -> pd.DataFrame:
+    """Return a square Spearman matrix including missingness indicators."""
+    values: dict[str, pd.Series] = {}
+    for column in columns:
+        numeric = pd.to_numeric(frame[column], errors="coerce")
+        values[column] = numeric
+        if numeric.isna().any():
+            values[f"__missing__{column}"] = numeric.isna().astype(int)
+    correlation = pd.DataFrame(values).corr(method="spearman").fillna(0.0)
+    for column in correlation.columns:
+        correlation.loc[column, column] = 1.0
+    return correlation.rename_axis("variable").reset_index()
+
+
+def save_summary(summary: pd.DataFrame, filename: str, directory: Path) -> None:
+    """Save a summary CSV."""
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / filename
+    summary.to_csv(path, index=False)
+    print(f"Saved: {path}")
 
 
 def parse_args() -> argparse.Namespace:
@@ -84,15 +197,10 @@ def main() -> None:
     ]
 
     summaries = {
-        "dataset_summary.csv": summarise_dataset(
-            frame, PATIENT_ID_COLUMN, OUTCOME_COLUMN
-        ),
-        "continuous_summary.csv": summarise_continuous_columns(
-            frame, continuous
-        ),
-        "categorical_summary.csv": summarise_categorical_columns(
-            frame, categorical
-        ),
+        "dataset_summary.csv": summarise_dataset(frame),
+        "continuous_summary.csv": summarise_continuous(frame, continuous),
+        "categorical_summary.csv": summarise_categorical(frame, categorical),
+        "categorical_pairwise_summary.csv": summarise_pairs(frame),
         "missingness_summary.csv": summarise_missingness(frame),
         "dependency_correlations.csv": summarise_dependencies(
             frame, continuous + binary

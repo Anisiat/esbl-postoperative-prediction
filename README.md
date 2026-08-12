@@ -108,6 +108,8 @@ The generator uses:
 * `dependency_correlations.csv` for Spearman correlations between continuous
   and binary predictors, including correlations between missingness indicators;
   and
+* `categorical_pairwise_summary.csv` for `site × organism` and
+  `surgical specialty × prophylaxis` joint frequency tables; and
 * `logistic_coefficients.csv` to reproduce approximate fitted relationships
   between the predictors and `esbl_status`.
 
@@ -116,16 +118,19 @@ the reported quantiles, while categorical values and missing values are created
 to match the aggregate counts. A simple Gaussian rank-copula then reorders the
 generated numeric and binary values so their rank correlations and joint
 missingness approximate those observed in iCARE, without changing any marginal
-counts or distributions. Synthetic patient identifiers, infection identifiers
-and admission dates are generated independently. The logistic coefficients are
+counts or distributions. The two selected categorical pairs are sampled from
+their joint count tables, preserving those cross-tabs exactly. Synthetic
+patient identifiers, infection identifiers and admission dates are generated
+independently. The logistic coefficients are
 then used to rank noisy latent risks, with the published case count fixing the
 final outcome prevalence.
 
 The dependency step is deliberately limited to relationships supported by the
-aggregate export: it approximates numeric/binary correlations and missingness,
-but does not claim to reproduce every higher-order or categorical relationship.
-If `dependency_correlations.csv` is absent, the generator remains compatible
-with older summary bundles and samples predictors independently.
+aggregate export: it approximates numeric/binary correlations and missingness
+and preserves the two selected categorical cross-tabs, but does not claim to
+reproduce every higher-order relationship. If either dependency file is
+absent, the generator remains compatible with older summary bundles and samples
+the corresponding predictors independently.
 
 Real and synthetic data are summarised by separate scripts because the local
 environment does not contain the iCARE configuration and utility modules:
