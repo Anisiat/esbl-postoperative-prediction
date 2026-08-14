@@ -1,0 +1,103 @@
+variable_1,variable_2,category_1,category_2,count,proportion
+site,organism_bug,urine,escherichia coli,485,0.1873310158362302
+site,organism_bug,wound,escherichia coli,364,0.14059482425646969
+site,organism_bug,__MISSING__,escherichia coli,258,0.0996523754345307
+site,organism_bug,sputum,escherichia coli,196,0.07570490536886829
+site,organism_bug,drain,escherichia coli,175,0.06759366550791812
+site,organism_bug,urine,klebsiella pneumoniae,172,0.0664349169563538
+site,organism_bug,wound,klebsiella pneumoniae,150,0.05793742757821553
+site,organism_bug,blood,escherichia coli,106,0.040942448821938975
+site,organism_bug,__MISSING__,klebsiella pneumoniae,84,0.03244495944380069
+site,organism_bug,drain,klebsiella pneumoniae,68,0.02626496716879104
+site,organism_bug,sputum,klebsiella pneumoniae,68,0.02626496716879104
+site,organism_bug,urine,proteus mirabilis,50,0.019312475859405175
+site,organism_bug,wound,proteus mirabilis,44,0.016994978756276556
+site,organism_bug,tips_devices,escherichia coli,42,0.016222479721900347
+site,organism_bug,tissue/biopsy,escherichia coli,40,0.01544998068752414
+site,organism_bug,urine,klebsiella oxytoca,40,0.01544998068752414
+site,organism_bug,blood,klebsiella pneumoniae,34,0.01313248358439552
+site,organism_bug,__MISSING__,proteus mirabilis,33,0.012746234067207415
+site,organism_bug,wound,klebsiella oxytoca,32,0.012359984550019312
+site,organism_bug,sputum,proteus mirabilis,24,0.009269988412514484
+site,organism_bug,__MISSING__,klebsiella oxytoca,24,0.009269988412514484
+site,organism_bug,drain,proteus mirabilis,20,0.00772499034376207
+site,organism_bug,tissue/biopsy,klebsiella pneumoniae,16,0.006179992275009656
+site,organism_bug,sputum,klebsiella oxytoca,15,0.005793742757821553
+site,organism_bug,blood,proteus mirabilis,11,0.004248744689069139
+site,organism_bug,tips_devices,klebsiella pneumoniae,10,0.003862495171881035
+site,organism_bug,drain,klebsiella oxytoca,9,0.0034762456546929316
+site,organism_bug,blood,klebsiella oxytoca,7,0.0027037466203167246
+site,organism_bug,tips_devices,proteus mirabilis,4,0.001544998068752414
+site,organism_bug,tips_devices,klebsiella oxytoca,3,0.0011587485515643105
+site,organism_bug,tissue/biopsy,proteus mirabilis,3,0.0011587485515643105
+site,organism_bug,tissue/biopsy,klebsiella oxytoca,2,0.000772499034376207
+tfc,prophylaxis_group,abdominal_gi,no_prophylaxis,147,0.056778679026651215
+tfc,prophylaxis_group,uro_nephro,no_prophylaxis,141,0.054461181923522596
+tfc,prophylaxis_group,uro_nephro,cefuroxime +/- metronidazole,136,0.05252993433758208
+tfc,prophylaxis_group,abdominal_gi,cefuroxime +/- metronidazole,135,0.05214368482039398
+tfc,prophylaxis_group,obs_gynae,no_prophylaxis,113,0.043646195442255696
+tfc,prophylaxis_group,obs_gynae,cefuroxime +/- metronidazole,100,0.03862495171881035
+tfc,prophylaxis_group,neuro_ent,no_prophylaxis,91,0.03514870606411742
+tfc,prophylaxis_group,ortho_plastics,no_prophylaxis,86,0.0332174584781769
+tfc,prophylaxis_group,ortho_plastics,cefuroxime +/- metronidazole,77,0.02974121282348397
+tfc,prophylaxis_group,gynaecological_oncology,no_prophylaxis,77,0.02974121282348397
+tfc,prophylaxis_group,cardiothoracic,no_prophylaxis,77,0.02974121282348397
+tfc,prophylaxis_group,general_surgery,no_prophylaxis,74,0.02858246427191966
+tfc,prophylaxis_group,neuro_ent,cefuroxime +/- metronidazole,73,0.028196214754731556
+tfc,prophylaxis_group,gynaecological_oncology,cefuroxime +/- metronidazole,72,0.027809965237543453
+tfc,prophylaxis_group,uro_nephro,limited_enterobact_activity,67,0.025878717651602934
+tfc,prophylaxis_group,general_surgery,cefuroxime +/- metronidazole,64,0.024719969100038625
+tfc,prophylaxis_group,cardiothoracic,cefuroxime +/- metronidazole,52,0.020084974893781384
+tfc,prophylaxis_group,abdominal_gi,limited_enterobact_activity,50,0.019312475859405175
+tfc,prophylaxis_group,uro_nephro,co-amoxiclav-based,49,0.01892622634221707
+tfc,prophylaxis_group,vascular,no_prophylaxis,46,0.017767477790652762
+tfc,prophylaxis_group,abdominal_gi,co-amoxiclav-based,39,0.015063731170336037
+tfc,prophylaxis_group,vascular,cefuroxime +/- metronidazole,37,0.01429123213595983
+tfc,prophylaxis_group,uro_nephro,aminoglycoside-based,35,0.013518733101583623
+tfc,prophylaxis_group,cardiothoracic,co-amoxiclav-based,34,0.01313248358439552
+tfc,prophylaxis_group,ortho_plastics,limited_enterobact_activity,34,0.01313248358439552
+tfc,prophylaxis_group,__MISSING__,no_prophylaxis,34,0.01313248358439552
+tfc,prophylaxis_group,neuro_ent,aminoglycoside-based,31,0.01197373503283121
+tfc,prophylaxis_group,cardiothoracic,limited_enterobact_activity,31,0.01197373503283121
+tfc,prophylaxis_group,neuro_ent,limited_enterobact_activity,31,0.01197373503283121
+tfc,prophylaxis_group,abdominal_gi,aminoglycoside-based,31,0.01197373503283121
+tfc,prophylaxis_group,obs_gynae,co-amoxiclav-based,30,0.011587485515643106
+tfc,prophylaxis_group,obs_gynae,limited_enterobact_activity,27,0.010428736964078795
+tfc,prophylaxis_group,obs_gynae,aminoglycoside-based,27,0.010428736964078795
+tfc,prophylaxis_group,gynaecological_oncology,aminoglycoside-based,27,0.010428736964078795
+tfc,prophylaxis_group,general_surgery,limited_enterobact_activity,26,0.010042487446890692
+tfc,prophylaxis_group,general_surgery,co-amoxiclav-based,26,0.010042487446890692
+tfc,prophylaxis_group,__MISSING__,cefuroxime +/- metronidazole,24,0.009269988412514484
+tfc,prophylaxis_group,vascular,limited_enterobact_activity,23,0.008883738895326381
+tfc,prophylaxis_group,ortho_plastics,co-amoxiclav-based,21,0.008111239860950173
+tfc,prophylaxis_group,gynaecological_oncology,limited_enterobact_activity,21,0.008111239860950173
+tfc,prophylaxis_group,general_surgery,aminoglycoside-based,20,0.00772499034376207
+tfc,prophylaxis_group,gynaecological_oncology,co-amoxiclav-based,19,0.007338740826573967
+tfc,prophylaxis_group,ortho_plastics,aminoglycoside-based,18,0.006952491309385863
+tfc,prophylaxis_group,neuro_ent,co-amoxiclav-based,18,0.006952491309385863
+tfc,prophylaxis_group,vascular,aminoglycoside-based,17,0.00656624179219776
+tfc,prophylaxis_group,uro_nephro,cefuroxime +/- metronidazole + aminoglycoside,16,0.006179992275009656
+tfc,prophylaxis_group,obs_gynae,cefuroxime +/- metronidazole + aminoglycoside,16,0.006179992275009656
+tfc,prophylaxis_group,cardiothoracic,aminoglycoside-based,16,0.006179992275009656
+tfc,prophylaxis_group,vascular,co-amoxiclav-based,16,0.006179992275009656
+tfc,prophylaxis_group,abdominal_gi,cefuroxime +/- metronidazole + aminoglycoside,14,0.005407493240633449
+tfc,prophylaxis_group,__MISSING__,co-amoxiclav-based,14,0.005407493240633449
+tfc,prophylaxis_group,__MISSING__,limited_enterobact_activity,12,0.004634994206257242
+tfc,prophylaxis_group,__MISSING__,aminoglycoside-based,9,0.0034762456546929316
+tfc,prophylaxis_group,general_surgery,other_broad_spectrum_gram_negative_active,7,0.0027037466203167246
+tfc,prophylaxis_group,gynaecological_oncology,cefuroxime +/- metronidazole + aminoglycoside,7,0.0027037466203167246
+tfc,prophylaxis_group,ortho_plastics,cefuroxime +/- metronidazole + aminoglycoside,6,0.002317497103128621
+tfc,prophylaxis_group,cardiothoracic,cefuroxime +/- metronidazole + aminoglycoside,6,0.002317497103128621
+tfc,prophylaxis_group,uro_nephro,other_broad_spectrum_gram_negative_active,6,0.002317497103128621
+tfc,prophylaxis_group,vascular,cefuroxime +/- metronidazole + aminoglycoside,5,0.0019312475859405175
+tfc,prophylaxis_group,obs_gynae,other_broad_spectrum_gram_negative_active,5,0.0019312475859405175
+tfc,prophylaxis_group,cardiothoracic,other_broad_spectrum_gram_negative_active,4,0.001544998068752414
+tfc,prophylaxis_group,neuro_ent,other_broad_spectrum_gram_negative_active,4,0.001544998068752414
+tfc,prophylaxis_group,__MISSING__,cefuroxime +/- metronidazole + aminoglycoside,3,0.0011587485515643105
+tfc,prophylaxis_group,ortho_plastics,other_broad_spectrum_gram_negative_active,3,0.0011587485515643105
+tfc,prophylaxis_group,abdominal_gi,other_broad_spectrum_gram_negative_active,3,0.0011587485515643105
+tfc,prophylaxis_group,general_surgery,cefuroxime +/- metronidazole + aminoglycoside,2,0.000772499034376207
+tfc,prophylaxis_group,gynaecological_oncology,other_broad_spectrum_gram_negative_active,2,0.000772499034376207
+tfc,prophylaxis_group,vascular,other_broad_spectrum_gram_negative_active,2,0.000772499034376207
+tfc,prophylaxis_group,neuro_ent,cefuroxime +/- metronidazole + aminoglycoside,2,0.000772499034376207
+tfc,prophylaxis_group,__MISSING__,other_broad_spectrum_gram_negative_active,1,0.0003862495171881035

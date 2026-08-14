@@ -1,0 +1,463 @@
+ethnicity_desc,crp,temp,site,imd_decile,tfc,admission_date,age_at_admission,any_healthcare_exposure_90d,asthma,cancer,copd,days_from_admission_to_first_culture,emergency_exposure_90d,esbl_status,gender,hospital_exposure_90d,hypertension,infection_id,ischaemic_heart_disease,min_days_from_surgery_to_infection,organism_bug,past_abx,prior_positive_esbl,prophylaxis_group,subject,surgery_length,type2_diabetes
+,28.3052,37.4194,,7.0,vascular,2023-04-22,70,0,0,1,0,3,0,0,0,0,0,SYN-I0001715,0,2,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P001700,4.0145,0
+,211.5105,36.9993,,2.0,obs_gynae,2023-04-23,76,0,1,0,0,5,0,1,1,0,0,SYN-I0002509,0,6,escherichia coli,1,1,cefuroxime +/- metronidazole,SYN-P001790,2.6029,0
+white,,,drain,3.0,uro_nephro,2023-04-23,70,0,1,1,0,19,0,1,0,0,0,SYN-I0001656,1,27,escherichia coli,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000835,0.244,0
+asian,255.2134,37.5589,drain,6.0,vascular,2023-04-23,78,1,1,0,0,14,0,1,0,0,1,SYN-I0000481,0,24,escherichia coli,0,0,no_prophylaxis,SYN-P000112,5.2897,1
+white,,,urine,3.0,abdominal_gi,2023-04-24,61,1,0,1,1,23,0,1,1,1,1,SYN-I0000735,0,33,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000451,0.932,0
+white,,,wound,2.0,general_surgery,2023-04-25,49,0,0,1,1,16,0,0,1,0,0,SYN-I0001523,0,16,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000123,0.6958,0
+black,18.9131,37.6047,drain,8.0,obs_gynae,2023-04-25,42,0,0,0,0,17,0,0,1,0,0,SYN-I0000852,1,14,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000660,3.5617,0
+,19.7082,36.5212,wound,7.0,uro_nephro,2023-04-26,74,0,0,0,0,7,0,0,1,0,1,SYN-I0002212,1,9,escherichia coli,0,0,no_prophylaxis,SYN-P001794,4.7475,0
+white,265.3826,37.0054,,4.0,abdominal_gi,2023-05-01,71,1,0,1,0,2,0,1,1,1,1,SYN-I0001198,1,3,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000353,2.0986,1
+,16.485,,,,abdominal_gi,2023-05-01,51,0,0,1,0,8,0,1,1,0,1,SYN-I0002148,0,11,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P001684,1.6391,1
+,,36.2491,urine,6.0,,2023-05-02,49,1,0,1,0,13,0,1,0,1,0,SYN-I0000339,0,9,klebsiella pneumoniae,1,0,cefuroxime +/- metronidazole,SYN-P002028,1.7953,0
+asian,22.9042,36.8929,urine,,cardiothoracic,2023-05-04,64,1,0,0,0,9,0,0,0,1,1,SYN-I0002552,1,7,klebsiella pneumoniae,1,0,aminoglycoside-based,SYN-P000163,5.1532,0
+asian,16.2359,37.7,blood,9.0,gynaecological_oncology,2023-05-05,72,1,0,0,0,19,0,1,1,1,0,SYN-I0002479,0,15,escherichia coli,1,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P001628,3.3963,0
+white,91.9684,36.5208,urine,6.0,gynaecological_oncology,2023-05-05,72,0,1,1,0,3,0,1,0,0,1,SYN-I0001313,0,2,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001008,3.6048,0
+,175.4833,37.3076,blood,7.0,uro_nephro,2023-05-07,68,1,1,1,0,2,0,1,1,1,0,SYN-I0002278,1,3,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002181,3.4076,0
+,271.8531,36.0922,wound,2.0,abdominal_gi,2023-05-08,79,1,0,0,0,8,0,0,0,1,1,SYN-I0000775,1,10,proteus mirabilis,0,0,aminoglycoside-based,SYN-P001113,7.569,0
+,9.3618,36.0493,blood,2.0,neuro_ent,2023-05-11,33,1,0,1,0,42,0,0,1,1,1,SYN-I0002353,0,45,escherichia coli,0,0,no_prophylaxis,SYN-P000444,3.429,0
+white,,36.9334,blood,6.0,cardiothoracic,2023-05-19,60,0,0,0,0,2,0,1,1,0,0,SYN-I0001460,0,3,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002029,4.5417,0
+asian,153.5999,36.6908,urine,,obs_gynae,2023-05-19,53,0,0,1,0,21,0,0,0,0,0,SYN-I0000571,0,33,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001309,13.6021,1
+black,302.908,36.9144,,3.0,vascular,2023-05-25,67,0,0,0,0,6,0,0,1,0,1,SYN-I0002073,0,6,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P000191,8.1744,0
+,,36.7399,sputum,10.0,uro_nephro,2023-05-29,31,0,0,0,0,41,0,0,1,0,0,SYN-I0000332,0,34,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P000581,2.5973,1
+white,138.8163,37.1989,blood,8.0,,2023-05-30,51,1,0,1,0,8,0,0,1,1,1,SYN-I0000959,1,4,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P001617,9.5966,0
+,317.3331,36.7681,,8.0,uro_nephro,2023-06-01,68,1,0,0,1,16,0,1,1,1,1,SYN-I0000733,0,15,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P001183,9.8058,1
+white,,37.5397,wound,6.0,general_surgery,2023-06-02,60,1,0,0,0,2,0,0,1,1,1,SYN-I0002461,0,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001404,2.6906,1
+,178.4618,36.5152,urine,9.0,uro_nephro,2023-06-07,70,0,0,0,0,18,0,0,1,0,1,SYN-I0002463,0,17,proteus mirabilis,0,0,no_prophylaxis,SYN-P001398,1.7746,0
+,189.119,37.6026,blood,9.0,abdominal_gi,2023-06-09,33,0,1,0,0,28,0,1,1,0,0,SYN-I0000728,0,15,escherichia coli,0,0,no_prophylaxis,SYN-P000738,4.2982,0
+white,,,blood,4.0,ortho_plastics,2023-06-13,77,0,0,0,1,4,0,1,0,0,0,SYN-I0000530,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002076,0.2932,0
+,79.3726,37.2283,tips_devices,2.0,ortho_plastics,2023-06-13,50,0,1,0,0,37,0,0,0,0,1,SYN-I0001296,1,38,escherichia coli,0,0,no_prophylaxis,SYN-P002206,6.7007,1
+,189.315,36.9012,wound,6.0,,2023-06-14,65,0,1,0,0,3,0,0,0,0,0,SYN-I0000936,0,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000807,10.8302,0
+,254.2593,37.1825,urine,4.0,obs_gynae,2023-06-16,56,0,0,0,0,6,0,0,1,0,1,SYN-I0001363,1,2,escherichia coli,0,0,aminoglycoside-based,SYN-P001862,9.9662,0
+,,36.7037,sputum,2.0,abdominal_gi,2023-06-17,35,0,1,0,0,19,0,1,1,1,0,SYN-I0001217,0,17,escherichia coli,1,0,no_prophylaxis,SYN-P000260,4.0411,0
+,6.5722,37.0855,,5.0,gynaecological_oncology,2023-06-18,64,1,0,0,0,19,1,1,0,1,1,SYN-I0002441,1,16,klebsiella oxytoca,1,0,cefuroxime +/- metronidazole,SYN-P000702,10.3932,0
+,98.8722,36.5697,tissue/biopsy,2.0,abdominal_gi,2023-06-19,47,1,0,0,0,5,0,0,0,1,0,SYN-I0002193,0,4,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P000050,8.1263,0
+white,376.157,36.8055,wound,,general_surgery,2023-06-21,73,0,1,0,0,14,1,0,0,0,1,SYN-I0000753,0,14,escherichia coli,0,1,no_prophylaxis,SYN-P000123,3.1404,0
+white,,36.0264,,5.0,abdominal_gi,2023-06-22,64,0,0,0,0,3,0,0,1,0,1,SYN-I0000491,0,3,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001956,0.3003,0
+white,12.4387,36.9531,drain,5.0,vascular,2023-06-24,63,0,0,0,0,64,0,0,0,0,0,SYN-I0000493,0,59,proteus mirabilis,0,0,limited_enterobact_activity,SYN-P001968,9.0318,0
+white,296.1493,37.972,,4.0,ortho_plastics,2023-06-30,52,1,0,0,0,23,0,1,1,0,0,SYN-I0002174,0,18,escherichia coli,0,0,no_prophylaxis,SYN-P000183,1.4014,0
+white,6.4816,36.3215,wound,6.0,ortho_plastics,2023-07-02,51,0,0,0,1,13,0,0,0,1,0,SYN-I0000330,0,13,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P001351,7.0541,0
+white,156.5404,37.4596,sputum,8.0,obs_gynae,2023-07-04,68,1,0,0,0,33,0,0,0,0,0,SYN-I0000442,0,19,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P002199,6.5158,0
+white,190.5655,36.6395,urine,3.0,cardiothoracic,2023-07-06,80,0,0,0,0,4,0,0,1,0,0,SYN-I0000790,0,3,escherichia coli,0,0,co-amoxiclav-based,SYN-P000389,2.9502,0
+white,196.5551,36.7197,urine,10.0,ortho_plastics,2023-07-09,70,0,0,0,0,2,0,1,0,0,0,SYN-I0002323,1,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001741,3.2581,0
+white,82.4874,36.5839,urine,7.0,uro_nephro,2023-07-10,51,0,0,0,0,19,0,0,0,0,0,SYN-I0002370,0,15,proteus mirabilis,1,0,no_prophylaxis,SYN-P000857,8.2373,0
+,24.3715,36.639,urine,4.0,cardiothoracic,2023-07-14,39,0,0,0,0,10,0,0,1,1,0,SYN-I0002157,0,5,escherichia coli,0,0,limited_enterobact_activity,SYN-P001128,6.8541,0
+white,28.8719,36.5297,,4.0,obs_gynae,2023-07-17,69,0,0,0,0,14,0,1,1,0,0,SYN-I0001117,0,11,escherichia coli,0,1,no_prophylaxis,SYN-P000969,3.7784,0
+white,26.293,36.552,urine,8.0,ortho_plastics,2023-07-18,72,1,0,1,0,67,1,1,0,1,1,SYN-I0002140,1,46,escherichia coli,0,1,no_prophylaxis,SYN-P000002,4.9172,1
+white,,,,2.0,abdominal_gi,2023-07-19,64,0,0,0,0,6,0,0,1,0,0,SYN-I0002429,0,6,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000636,0.2655,0
+white,24.2294,36.6549,,8.0,abdominal_gi,2023-07-22,36,1,0,0,0,9,0,0,1,1,0,SYN-I0000092,0,11,escherichia coli,0,0,no_prophylaxis,SYN-P001238,4.4972,1
+,60.9974,36.9804,wound,8.0,uro_nephro,2023-07-28,57,0,0,1,0,6,0,0,0,0,0,SYN-I0002530,0,8,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P002132,8.6926,0
+,,,tips_devices,6.0,neuro_ent,2023-07-29,70,1,0,0,0,9,1,1,1,1,1,SYN-I0000833,0,13,escherichia coli,1,0,no_prophylaxis,SYN-P000055,0.5412,0
+black,,36.6782,wound,5.0,uro_nephro,2023-08-01,56,1,0,1,0,39,0,0,1,1,0,SYN-I0001033,0,25,escherichia coli,0,0,limited_enterobact_activity,SYN-P000539,1.8081,0
+white,,36.6751,wound,2.0,obs_gynae,2023-08-06,44,1,0,0,0,20,0,0,0,0,0,SYN-I0000020,0,30,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P001497,8.2688,0
+white,34.7293,36.6238,tissue/biopsy,9.0,uro_nephro,2023-08-07,68,0,0,0,0,29,0,0,1,0,0,SYN-I0000799,0,30,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P001427,3.1322,0
+white,,,urine,5.0,uro_nephro,2023-08-10,52,1,0,0,0,3,0,1,1,1,0,SYN-I0001767,0,3,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001418,0.2262,0
+white,220.5263,37.0889,sputum,4.0,ortho_plastics,2023-08-11,80,0,0,0,0,11,0,1,1,0,0,SYN-I0000374,0,11,escherichia coli,0,0,limited_enterobact_activity,SYN-P000546,4.0278,0
+white,10.6073,36.6916,urine,7.0,abdominal_gi,2023-08-15,76,0,0,0,0,7,1,0,0,0,0,SYN-I0000292,1,9,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000244,3.2334,0
+white,146.5949,36.5263,drain,8.0,obs_gynae,2023-08-20,39,0,1,0,0,5,0,0,1,0,0,SYN-I0001044,1,4,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P000147,0.3719,0
+white,,36.6861,urine,4.0,neuro_ent,2023-08-21,48,0,0,0,0,5,0,0,1,0,1,SYN-I0001575,0,7,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001638,0.2463,0
+white,50.7136,37.693,blood,4.0,uro_nephro,2023-08-24,31,1,0,1,0,3,1,0,1,1,0,SYN-I0000783,0,5,escherichia coli,1,0,limited_enterobact_activity,SYN-P002228,1.63,0
+white,102.5895,36.5514,sputum,2.0,abdominal_gi,2023-08-26,63,1,0,0,0,21,0,0,0,1,1,SYN-I0000829,1,17,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P001492,8.6161,0
+white,188.9248,36.5598,urine,6.0,gynaecological_oncology,2023-08-27,68,1,0,1,0,37,0,0,0,1,1,SYN-I0001728,0,40,escherichia coli,0,0,no_prophylaxis,SYN-P001641,7.4314,1
+asian,,,sputum,3.0,obs_gynae,2023-08-27,53,0,0,0,0,11,0,1,1,0,1,SYN-I0000097,1,6,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001281,0.2437,0
+,209.3803,37.2841,drain,4.0,uro_nephro,2023-08-30,66,0,1,0,1,13,0,1,0,0,0,SYN-I0001002,1,11,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000201,5.3559,0
+white,19.5703,37.4472,urine,9.0,cardiothoracic,2023-09-04,63,1,0,1,0,4,0,0,0,1,0,SYN-I0001971,0,7,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001283,1.9206,0
+white,12.7632,36.9585,sputum,4.0,neuro_ent,2023-09-05,66,0,1,0,0,29,0,0,1,0,1,SYN-I0001842,1,36,proteus mirabilis,0,0,no_prophylaxis,SYN-P000198,6.5654,0
+white,187.4967,36.6035,urine,4.0,abdominal_gi,2023-09-12,51,1,0,1,0,10,0,0,0,0,1,SYN-I0000614,0,12,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P000636,7.4193,0
+,178.0771,36.9161,,5.0,neuro_ent,2023-09-12,46,0,1,0,0,3,0,1,1,1,0,SYN-I0000768,1,5,escherichia coli,0,0,aminoglycoside-based,SYN-P000264,3.7446,0
+white,13.0287,37.8161,urine,6.0,general_surgery,2023-09-13,71,0,0,0,0,9,0,0,1,0,1,SYN-I0000023,0,10,escherichia coli,1,0,limited_enterobact_activity,SYN-P001744,5.4707,1
+,,36.5026,drain,5.0,general_surgery,2023-09-15,47,1,0,0,0,9,0,0,1,1,0,SYN-I0002322,0,6,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000577,1.2149,0
+white,62.8796,37.5265,blood,6.0,obs_gynae,2023-09-17,30,1,0,0,0,9,0,0,1,1,0,SYN-I0000411,0,8,escherichia coli,0,0,no_prophylaxis,SYN-P001386,0.57,0
+white,179.5631,37.1033,tips_devices,2.0,neuro_ent,2023-09-19,58,0,1,0,0,6,0,0,1,0,0,SYN-I0000089,1,7,escherichia coli,0,0,limited_enterobact_activity,SYN-P001063,9.2593,0
+white,115.7307,37.3298,wound,,obs_gynae,2023-09-19,63,0,0,0,0,2,0,0,0,0,0,SYN-I0001371,0,3,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000672,9.9267,1
+,193.3806,36.5103,urine,2.0,gynaecological_oncology,2023-09-20,53,1,1,0,0,37,0,1,0,1,0,SYN-I0001168,0,32,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001385,11.1684,0
+white,311.3293,37.2217,sputum,8.0,vascular,2023-09-20,37,1,0,1,0,2,0,0,1,1,0,SYN-I0000559,0,2,klebsiella pneumoniae,0,1,co-amoxiclav-based,SYN-P001062,5.8357,0
+,6.7594,36.7338,sputum,6.0,abdominal_gi,2023-09-20,67,0,0,0,0,5,0,1,1,0,0,SYN-I0002239,0,6,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000527,3.3719,0
+,278.0156,37.4491,wound,2.0,uro_nephro,2023-09-21,69,0,1,0,0,4,0,1,1,0,1,SYN-I0002170,0,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000785,10.6281,1
+black,240.9743,36.118,,2.0,cardiothoracic,2023-09-24,82,1,0,0,0,36,0,0,1,1,1,SYN-I0000011,1,13,escherichia coli,0,0,co-amoxiclav-based,SYN-P001802,8.6706,0
+,316.6286,36.2117,drain,2.0,general_surgery,2023-09-25,40,1,0,0,0,33,0,0,1,1,0,SYN-I0000787,0,24,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001023,2.5814,0
+white,,,wound,6.0,ortho_plastics,2023-09-27,34,1,0,0,0,3,0,1,1,0,0,SYN-I0002126,0,3,klebsiella pneumoniae,0,1,aminoglycoside-based,SYN-P001302,0.3873,0
+,,37.3185,wound,6.0,obs_gynae,2023-09-29,69,1,1,1,0,4,0,0,1,1,0,SYN-I0001782,1,3,escherichia coli,0,0,no_prophylaxis,SYN-P000182,0.7973,0
+white,243.9673,36.7475,urine,5.0,abdominal_gi,2023-10-04,76,1,0,1,0,38,0,1,0,0,0,SYN-I0001976,0,28,escherichia coli,0,0,co-amoxiclav-based,SYN-P002022,4.0056,0
+black,,36.6905,,2.0,gynaecological_oncology,2023-10-04,32,1,0,0,1,21,0,1,0,1,0,SYN-I0002583,1,20,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000367,1.2196,1
+white,141.4539,36.8198,tissue/biopsy,3.0,uro_nephro,2023-10-07,64,1,0,0,0,2,0,0,1,1,1,SYN-I0002471,1,2,escherichia coli,1,0,limited_enterobact_activity,SYN-P000948,2.1846,1
+white,25.8954,36.6156,urine,8.0,obs_gynae,2023-10-09,59,1,1,0,0,4,1,1,0,0,1,SYN-I0000262,0,2,escherichia coli,0,0,no_prophylaxis,SYN-P001814,3.8491,0
+,,,wound,2.0,general_surgery,2023-10-10,65,1,0,0,0,21,0,1,1,1,0,SYN-I0001332,0,26,escherichia coli,0,0,no_prophylaxis,SYN-P000117,0.1847,0
+white,284.1149,36.6672,drain,6.0,abdominal_gi,2023-10-11,64,1,0,0,0,10,0,0,0,1,1,SYN-I0000028,0,9,escherichia coli,0,0,no_prophylaxis,SYN-P001889,2.6986,0
+white,,,wound,,gynaecological_oncology,2023-10-12,44,1,0,0,0,37,0,0,1,0,0,SYN-I0002352,0,36,escherichia coli,0,0,limited_enterobact_activity,SYN-P000504,2.8326,0
+,20.9846,36.947,drain,9.0,neuro_ent,2023-10-12,78,1,1,1,0,16,0,0,0,1,1,SYN-I0001925,1,13,klebsiella pneumoniae,0,1,no_prophylaxis,SYN-P000052,0.7863,0
+asian,,,wound,3.0,gynaecological_oncology,2023-10-19,27,1,0,0,0,11,1,0,1,1,0,SYN-I0002321,0,13,escherichia coli,0,0,no_prophylaxis,SYN-P001702,0.9075,0
+asian,7.0987,36.5592,urine,6.0,ortho_plastics,2023-10-20,74,1,0,0,0,9,1,0,0,1,0,SYN-I0001467,0,9,escherichia coli,1,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000157,8.8848,0
+,37.0907,36.5937,tissue/biopsy,5.0,vascular,2023-10-21,82,0,0,0,0,7,0,1,0,0,1,SYN-I0000663,1,3,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P001374,3.2227,0
+,6.515,36.1453,drain,5.0,ortho_plastics,2023-10-24,74,0,0,1,0,17,0,0,0,0,1,SYN-I0002508,1,20,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001392,2.2192,0
+,121.5868,,blood,10.0,abdominal_gi,2023-10-26,63,1,0,0,0,18,1,0,1,0,1,SYN-I0001197,0,10,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P000326,2.0154,0
+white,,36.8694,urine,9.0,obs_gynae,2023-10-27,71,0,0,1,1,2,1,0,0,0,0,SYN-I0000003,0,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001448,2.4144,0
+black,156.4004,36.742,,2.0,ortho_plastics,2023-10-31,64,0,0,0,0,38,0,0,0,0,1,SYN-I0000811,0,34,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001902,19.3718,0
+,337.0314,37.619,urine,10.0,abdominal_gi,2023-10-31,77,0,0,1,0,6,0,1,1,0,0,SYN-I0000071,0,5,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000706,4.9493,0
+white,134.4202,38.1576,urine,2.0,abdominal_gi,2023-11-02,28,0,0,0,0,3,0,0,1,0,0,SYN-I0002134,1,4,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P001260,4.2516,0
+white,,36.9925,wound,5.0,abdominal_gi,2023-11-03,57,1,0,1,0,19,0,1,1,1,0,SYN-I0002204,0,20,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000263,0.455,0
+white,,37.376,wound,8.0,gynaecological_oncology,2023-11-03,81,1,0,0,0,25,0,0,0,1,0,SYN-I0000779,0,39,proteus mirabilis,0,1,aminoglycoside-based,SYN-P000377,9.9267,1
+white,33.6141,,tips_devices,2.0,general_surgery,2023-11-07,63,0,0,0,0,38,0,1,0,0,1,SYN-I0002038,0,31,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000889,3.6894,0
+white,144.1588,36.6553,sputum,3.0,general_surgery,2023-11-07,47,0,0,1,0,26,0,0,1,0,1,SYN-I0002397,0,18,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000351,9.7551,0
+white,,,urine,4.0,neuro_ent,2023-11-08,75,1,0,0,0,6,0,1,0,1,0,SYN-I0001170,0,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001171,3.4553,0
+white,,36.9228,wound,10.0,neuro_ent,2023-11-09,62,1,0,0,0,6,0,1,0,1,1,SYN-I0000595,0,5,escherichia coli,1,0,no_prophylaxis,SYN-P001000,0.9892,1
+asian,88.8282,37.0023,drain,8.0,vascular,2023-11-10,32,1,0,0,0,18,0,1,1,1,0,SYN-I0002398,0,14,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000001,16.4597,0
+white,317.302,36.6641,tips_devices,8.0,gynaecological_oncology,2023-11-13,73,1,1,0,0,6,1,1,0,0,0,SYN-I0001845,1,4,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000460,9.9267,0
+white,52.944,36.9733,tips_devices,7.0,cardiothoracic,2023-11-14,78,0,0,0,0,27,0,1,0,0,1,SYN-I0000488,1,32,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001603,8.2594,1
+black,38.313,36.6951,urine,,cardiothoracic,2023-11-16,32,1,0,1,0,62,0,0,1,1,0,SYN-I0001579,1,73,proteus mirabilis,0,0,aminoglycoside-based,SYN-P001768,9.9267,0
+,23.3302,36.57,wound,7.0,ortho_plastics,2023-11-17,71,1,0,0,0,35,1,1,1,1,1,SYN-I0000244,0,27,escherichia coli,0,1,no_prophylaxis,SYN-P001165,0.9216,1
+white,308.7872,36.9489,wound,5.0,cardiothoracic,2023-11-18,53,0,0,0,0,10,0,1,1,1,1,SYN-I0001600,0,8,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000846,0.4653,0
+white,312.5121,37.1412,urine,5.0,neuro_ent,2023-11-18,49,1,0,0,0,5,0,0,1,1,0,SYN-I0001967,0,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001361,3.003,0
+asian,,36.6571,urine,10.0,obs_gynae,2023-11-19,82,0,1,0,0,14,0,1,1,0,1,SYN-I0002248,1,10,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000905,1.164,0
+,65.6328,37.6973,sputum,2.0,abdominal_gi,2023-11-22,70,1,0,1,0,20,0,0,0,1,1,SYN-I0002052,0,17,escherichia coli,0,0,no_prophylaxis,SYN-P001974,4.6459,0
+,173.1181,36.6526,wound,2.0,neuro_ent,2023-11-24,80,0,1,1,1,20,0,0,0,0,1,SYN-I0002514,0,13,escherichia coli,0,0,aminoglycoside-based,SYN-P001918,9.2305,0
+,93.6941,36.1681,urine,4.0,gynaecological_oncology,2023-11-26,80,0,0,1,0,19,0,0,0,0,1,SYN-I0002294,0,14,escherichia coli,0,0,limited_enterobact_activity,SYN-P001543,13.0099,1
+,15.3529,36.8143,sputum,8.0,ortho_plastics,2023-11-27,46,1,0,0,0,20,0,0,1,1,0,SYN-I0000213,0,14,escherichia coli,0,0,co-amoxiclav-based,SYN-P001154,8.995,0
+asian,343.5847,37.5294,,,uro_nephro,2023-11-27,67,0,0,0,1,2,0,0,1,0,1,SYN-I0002274,0,1,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P000487,8.5254,1
+,,,sputum,,abdominal_gi,2023-11-28,42,1,0,1,0,26,0,1,1,1,0,SYN-I0000749,0,35,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000663,2.254,0
+,,,urine,2.0,uro_nephro,2023-11-28,35,0,1,0,0,7,0,1,0,0,0,SYN-I0001817,0,8,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P001756,0.3068,0
+black,235.2167,,urine,2.0,neuro_ent,2023-11-30,75,0,0,1,1,10,1,1,0,0,1,SYN-I0000448,0,10,klebsiella pneumoniae,0,1,no_prophylaxis,SYN-P002137,6.0267,0
+white,317.3001,,urine,9.0,uro_nephro,2023-12-02,64,0,1,0,0,4,0,1,0,0,0,SYN-I0002561,1,9,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P001099,6.9986,1
+white,347.1275,37.4113,urine,6.0,uro_nephro,2023-12-03,38,1,0,0,0,6,0,1,1,1,1,SYN-I0000770,0,3,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P001174,6.5553,1
+asian,6.585,36.1986,drain,3.0,obs_gynae,2023-12-05,86,1,0,0,0,42,1,0,0,1,1,SYN-I0001670,1,36,klebsiella pneumoniae,1,0,co-amoxiclav-based,SYN-P001534,13.3378,0
+white,,36.7164,drain,5.0,gynaecological_oncology,2023-12-07,66,1,0,0,0,6,0,1,0,1,1,SYN-I0000171,0,2,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001903,6.3069,0
+white,317.3,37.2126,drain,2.0,vascular,2023-12-07,58,0,0,0,0,3,0,0,0,0,1,SYN-I0001468,1,3,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000232,2.1318,0
+white,180.4386,36.2704,urine,4.0,abdominal_gi,2023-12-08,58,1,0,0,0,12,0,1,0,0,1,SYN-I0002412,0,9,escherichia coli,0,0,co-amoxiclav-based,SYN-P001954,1.0103,1
+asian,,,tissue/biopsy,10.0,vascular,2023-12-12,60,0,0,1,0,7,0,0,1,0,0,SYN-I0000233,1,9,escherichia coli,0,0,aminoglycoside-based,SYN-P001390,0.2298,0
+white,146.0962,36.0645,wound,5.0,obs_gynae,2023-12-14,76,0,0,0,0,10,0,0,1,1,1,SYN-I0001478,0,10,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000010,3.9349,0
+black,,37.7029,,8.0,ortho_plastics,2023-12-15,66,0,0,0,1,9,0,0,0,1,1,SYN-I0001169,0,12,escherichia coli,0,0,limited_enterobact_activity,SYN-P000792,2.879,0
+white,101.5222,36.9225,blood,3.0,neuro_ent,2023-12-15,56,0,0,1,0,41,0,0,1,0,0,SYN-I0001383,0,40,escherichia coli,0,0,limited_enterobact_activity,SYN-P000644,1.6356,0
+white,7.0698,36.4595,sputum,8.0,neuro_ent,2023-12-21,32,0,1,0,0,11,0,0,0,1,0,SYN-I0001553,0,7,escherichia coli,0,0,aminoglycoside-based,SYN-P000119,9.9267,0
+white,267.4789,36.5303,sputum,10.0,neuro_ent,2023-12-22,76,0,0,1,0,26,0,0,1,0,1,SYN-I0002228,0,19,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P002195,7.3491,0
+white,6.4522,36.8095,wound,5.0,general_surgery,2023-12-24,69,1,0,0,0,51,0,0,0,1,0,SYN-I0000158,0,40,escherichia coli,0,0,no_prophylaxis,SYN-P000637,4.5889,0
+white,45.3598,36.6994,blood,2.0,neuro_ent,2023-12-25,82,1,0,0,0,24,0,0,0,0,1,SYN-I0000765,1,29,escherichia coli,0,0,no_prophylaxis,SYN-P001411,1.749,0
+,155.0894,36.202,urine,6.0,abdominal_gi,2023-12-25,53,0,0,0,0,18,0,0,1,0,0,SYN-I0000243,0,17,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000476,4.3424,0
+white,111.9508,36.6068,wound,4.0,neuro_ent,2023-12-28,41,0,1,0,0,2,0,1,0,0,0,SYN-I0000037,0,5,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001379,7.7872,0
+white,270.9942,,wound,3.0,general_surgery,2023-12-29,33,0,0,1,0,5,0,0,1,0,0,SYN-I0000548,0,4,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001999,3.2995,0
+asian,25.1902,36.6419,urine,6.0,obs_gynae,2023-12-29,59,0,0,0,0,26,1,0,0,0,0,SYN-I0002329,1,27,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002028,2.0795,0
+black,,36.5462,,5.0,obs_gynae,2023-12-30,31,0,1,0,1,24,0,1,1,0,1,SYN-I0000688,0,21,escherichia coli,0,0,limited_enterobact_activity,SYN-P000205,1.0328,0
+white,15.0053,36.5991,drain,5.0,uro_nephro,2023-12-31,52,0,0,0,0,28,0,0,0,0,0,SYN-I0002550,0,33,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000428,5.4437,0
+white,92.0909,36.665,sputum,7.0,cardiothoracic,2024-01-02,67,0,0,0,0,3,0,0,0,0,1,SYN-I0001795,0,4,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000662,4.7494,0
+white,153.7634,36.5448,urine,2.0,obs_gynae,2024-01-03,35,0,0,1,0,5,1,0,1,0,1,SYN-I0000113,1,6,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P000884,2.3543,0
+white,14.4749,37.4201,,8.0,general_surgery,2024-01-06,54,1,0,0,0,9,1,0,1,1,0,SYN-I0001884,0,8,proteus mirabilis,0,0,aminoglycoside-based,SYN-P000717,0.587,0
+white,35.4063,37.2479,,6.0,uro_nephro,2024-01-07,63,0,0,0,0,35,1,1,0,0,1,SYN-I0002286,0,39,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001265,4.7826,0
+white,6.6092,36.3975,sputum,3.0,uro_nephro,2024-01-09,66,1,0,0,0,3,1,0,1,1,1,SYN-I0000985,0,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000906,0.8738,0
+white,266.3459,36.8686,urine,5.0,,2024-01-11,77,0,0,0,0,6,0,1,1,0,0,SYN-I0002059,0,10,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P002125,0.722,0
+asian,,,,2.0,abdominal_gi,2024-01-14,77,1,0,0,0,41,1,0,0,1,0,SYN-I0001163,1,37,proteus mirabilis,1,0,limited_enterobact_activity,SYN-P001530,2.4426,0
+,59.2709,37.3062,drain,5.0,cardiothoracic,2024-01-15,47,1,0,0,1,5,1,1,1,1,0,SYN-I0001987,0,6,escherichia coli,1,0,limited_enterobact_activity,SYN-P000288,1.2443,0
+white,23.7992,36.1613,drain,7.0,gynaecological_oncology,2024-01-16,72,1,1,1,0,22,1,0,1,0,0,SYN-I0001136,1,36,escherichia coli,0,0,aminoglycoside-based,SYN-P000554,4.9624,0
+,,36.5092,blood,8.0,general_surgery,2024-01-17,64,0,0,0,0,42,0,0,0,1,1,SYN-I0002088,0,38,proteus mirabilis,0,0,no_prophylaxis,SYN-P001022,0.4477,0
+white,6.8824,36.3132,sputum,2.0,obs_gynae,2024-01-17,31,1,0,0,0,40,1,0,0,1,1,SYN-I0000345,0,38,escherichia coli,0,0,no_prophylaxis,SYN-P001632,0.8449,0
+white,,36.1513,urine,6.0,obs_gynae,2024-01-18,64,1,0,1,0,16,1,1,1,0,1,SYN-I0001220,0,19,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000823,0.7613,0
+asian,6.5904,36.8661,urine,3.0,abdominal_gi,2024-01-20,70,1,0,0,1,42,0,1,0,1,1,SYN-I0001794,1,30,escherichia coli,0,0,no_prophylaxis,SYN-P000953,1.1132,0
+asian,261.5216,,wound,10.0,abdominal_gi,2024-01-22,83,1,1,0,0,20,0,1,0,1,0,SYN-I0001131,0,16,escherichia coli,0,1,co-amoxiclav-based,SYN-P002016,1.3249,1
+white,,36.9164,wound,2.0,obs_gynae,2024-01-25,58,0,0,0,0,5,0,0,1,0,0,SYN-I0000776,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002126,2.5236,0
+white,323.2473,36.6854,tissue/biopsy,3.0,abdominal_gi,2024-01-28,67,1,1,0,1,34,0,1,0,1,0,SYN-I0001194,1,17,klebsiella pneumoniae,0,1,cefuroxime +/- metronidazole,SYN-P000709,7.8902,0
+asian,,36.5445,,3.0,cardiothoracic,2024-01-30,55,1,0,0,0,5,0,1,0,1,0,SYN-I0000402,1,7,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001774,0.8981,0
+black,59.4439,36.3373,urine,3.0,ortho_plastics,2024-01-30,34,1,1,0,1,15,0,1,0,1,0,SYN-I0000180,0,19,escherichia coli,0,0,no_prophylaxis,SYN-P001433,0.4173,0
+,,36.6863,wound,3.0,uro_nephro,2024-02-01,46,1,0,1,0,57,0,0,1,0,0,SYN-I0000081,0,166,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001886,4.5064,1
+,38.8615,37.1054,,9.0,cardiothoracic,2024-02-03,77,0,0,0,0,21,0,0,0,0,1,SYN-I0000755,1,19,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P002089,2.0929,1
+white,,,wound,5.0,ortho_plastics,2024-02-03,61,0,1,0,0,7,0,0,0,0,1,SYN-I0000067,0,9,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001487,0.159,1
+white,322.2897,36.9267,wound,3.0,abdominal_gi,2024-02-04,78,0,0,0,0,2,1,1,1,0,1,SYN-I0001551,0,2,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P001791,4.6691,1
+,26.3977,36.3003,sputum,8.0,uro_nephro,2024-02-04,80,0,0,0,0,21,0,0,1,0,1,SYN-I0000900,0,12,escherichia coli,0,0,no_prophylaxis,SYN-P002122,5.9704,0
+black,98.3438,36.7289,urine,,gynaecological_oncology,2024-02-05,82,1,0,0,0,21,0,0,0,1,1,SYN-I0001887,1,24,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001082,6.9792,0
+,,36.6188,,3.0,vascular,2024-02-07,43,1,0,1,1,14,1,0,1,0,0,SYN-I0000997,0,18,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000599,1.8313,0
+,,35.8886,,4.0,general_surgery,2024-02-07,67,1,0,1,0,15,0,0,1,1,0,SYN-I0001623,0,6,proteus mirabilis,0,0,no_prophylaxis,SYN-P001256,0.2288,0
+white,181.4219,36.6516,,,abdominal_gi,2024-02-09,69,0,0,1,0,5,0,0,1,0,1,SYN-I0000676,0,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P002147,3.7924,0
+black,6.4984,36.6482,sputum,6.0,ortho_plastics,2024-02-10,31,0,0,0,0,5,0,0,1,0,0,SYN-I0000632,0,8,escherichia coli,0,0,no_prophylaxis,SYN-P001595,1.6029,0
+asian,192.507,37.7,wound,8.0,ortho_plastics,2024-02-12,73,0,1,1,0,9,0,0,0,0,1,SYN-I0001443,0,8,proteus mirabilis,0,0,co-amoxiclav-based,SYN-P000409,4.9143,0
+,55.8043,36.496,wound,8.0,uro_nephro,2024-02-13,51,1,0,1,0,22,0,0,0,1,1,SYN-I0001425,1,20,escherichia coli,0,0,no_prophylaxis,SYN-P000687,2.5916,0
+white,137.0405,36.777,urine,,abdominal_gi,2024-02-15,34,0,1,0,1,8,0,1,1,0,0,SYN-I0002556,0,5,escherichia coli,0,0,co-amoxiclav-based,SYN-P000510,2.0188,0
+white,287.6988,36.5959,tissue/biopsy,3.0,abdominal_gi,2024-02-15,82,0,0,0,0,2,0,0,0,0,1,SYN-I0000182,1,2,escherichia coli,0,0,limited_enterobact_activity,SYN-P001892,8.101,0
+white,154.8577,36.8573,,7.0,abdominal_gi,2024-02-18,60,1,0,0,0,31,0,0,1,1,0,SYN-I0000781,0,19,escherichia coli,0,0,co-amoxiclav-based,SYN-P000224,3.9364,0
+white,47.6815,36.8709,,9.0,obs_gynae,2024-02-20,66,1,0,0,0,32,0,0,1,1,1,SYN-I0000551,1,33,escherichia coli,0,0,no_prophylaxis,SYN-P001996,8.9297,1
+white,260.1985,36.5282,blood,8.0,obs_gynae,2024-02-27,92,1,1,0,1,17,0,0,0,1,1,SYN-I0001816,1,17,escherichia coli,1,1,co-amoxiclav-based,SYN-P000798,7.6027,0
+,,,,3.0,abdominal_gi,2024-02-29,50,0,0,0,1,7,0,1,0,0,0,SYN-I0001931,0,3,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P001517,0.6149,0
+white,103.5795,37.5834,wound,5.0,abdominal_gi,2024-03-03,40,1,0,1,0,6,0,0,0,1,0,SYN-I0001946,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000165,2.3818,0
+white,,36.7806,,10.0,uro_nephro,2024-03-03,32,1,0,0,0,31,0,1,1,1,0,SYN-I0000427,0,19,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000179,3.2622,0
+,17.2961,37.0661,wound,4.0,cardiothoracic,2024-03-05,81,1,0,0,0,39,0,1,1,1,1,SYN-I0001806,0,37,escherichia coli,0,0,no_prophylaxis,SYN-P001652,4.4641,0
+,81.2928,,urine,6.0,,2024-03-06,47,1,0,0,0,39,0,0,0,1,0,SYN-I0000084,0,35,klebsiella pneumoniae,1,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000136,0.509,0
+white,,,blood,5.0,obs_gynae,2024-03-08,61,1,0,0,0,7,1,0,1,1,1,SYN-I0000514,0,9,escherichia coli,1,1,cefuroxime +/- metronidazole,SYN-P000368,0.2888,0
+,7.4956,36.8247,wound,6.0,abdominal_gi,2024-03-09,40,0,1,0,0,42,0,0,1,0,0,SYN-I0000857,0,37,klebsiella pneumoniae,1,0,no_prophylaxis,SYN-P001589,2.9095,1
+white,93.0202,36.1236,wound,3.0,neuro_ent,2024-03-12,74,0,0,0,0,20,0,0,1,0,1,SYN-I0000075,0,16,escherichia coli,0,0,limited_enterobact_activity,SYN-P000825,7.7381,0
+,38.7164,37.7181,wound,2.0,general_surgery,2024-03-13,29,1,0,0,0,21,0,0,1,1,0,SYN-I0001781,0,21,escherichia coli,1,1,cefuroxime +/- metronidazole,SYN-P001039,0.544,0
+white,,,sputum,4.0,uro_nephro,2024-03-13,64,1,0,0,1,15,0,0,1,1,0,SYN-I0001477,0,19,escherichia coli,1,0,no_prophylaxis,SYN-P000387,2.3088,0
+white,30.7398,37.1631,sputum,,ortho_plastics,2024-03-15,40,0,0,0,0,6,0,0,1,0,1,SYN-I0002267,1,5,proteus mirabilis,0,0,no_prophylaxis,SYN-P000446,9.22,0
+,,37.1748,urine,3.0,abdominal_gi,2024-03-16,55,0,1,0,1,8,0,1,0,0,0,SYN-I0001416,0,10,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001527,8.5649,0
+,,,,5.0,abdominal_gi,2024-03-19,50,0,0,0,0,35,0,1,0,0,0,SYN-I0002460,0,38,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P002039,1.0133,1
+,201.7194,36.6078,,3.0,uro_nephro,2024-03-21,33,1,0,0,0,21,0,0,0,1,1,SYN-I0000344,0,12,escherichia coli,0,0,no_prophylaxis,SYN-P000493,5.8008,0
+,247.827,37.8369,drain,5.0,gynaecological_oncology,2024-03-22,67,1,0,0,0,6,1,0,0,0,0,SYN-I0001077,0,7,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001206,2.1097,0
+white,6.6232,36.5087,urine,3.0,uro_nephro,2024-03-23,83,1,1,0,0,10,0,1,0,1,1,SYN-I0001874,1,7,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P001317,0.5279,0
+asian,,36.3669,drain,4.0,obs_gynae,2024-03-27,71,0,0,0,1,9,0,0,0,0,1,SYN-I0001178,0,10,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001076,1.7927,0
+white,317.5002,36.6646,urine,2.0,general_surgery,2024-03-27,38,1,1,0,0,18,1,0,0,1,0,SYN-I0001427,0,21,escherichia coli,0,0,no_prophylaxis,SYN-P000327,6.9692,0
+white,112.3844,36.4835,,,ortho_plastics,2024-04-03,42,1,0,0,0,5,0,1,1,1,0,SYN-I0000917,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002174,4.307,0
+,108.2312,37.7049,blood,3.0,ortho_plastics,2024-04-05,66,0,1,0,0,17,0,0,0,0,0,SYN-I0001938,0,7,klebsiella oxytoca,0,0,co-amoxiclav-based,SYN-P000087,1.0314,0
+white,70.5971,36.1287,sputum,7.0,obs_gynae,2024-04-08,74,1,0,0,0,20,0,0,1,0,1,SYN-I0000963,1,14,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000290,2.1452,0
+black,,36.1521,sputum,,general_surgery,2024-04-09,57,1,0,1,0,12,0,0,1,1,0,SYN-I0001030,0,12,escherichia coli,0,0,aminoglycoside-based,SYN-P001403,0.9427,0
+,251.0425,36.7112,sputum,10.0,,2024-04-09,69,1,1,0,1,41,1,0,1,1,0,SYN-I0002063,0,18,escherichia coli,0,0,co-amoxiclav-based,SYN-P001547,0.7685,0
+,98.5023,,,2.0,uro_nephro,2024-04-12,32,1,1,1,0,17,0,0,1,1,0,SYN-I0001434,0,13,escherichia coli,1,1,cefuroxime +/- metronidazole,SYN-P000801,0.9823,0
+asian,,36.7557,wound,9.0,cardiothoracic,2024-04-16,69,0,0,1,0,8,0,0,1,0,1,SYN-I0000485,1,18,escherichia coli,0,0,no_prophylaxis,SYN-P002046,3.4837,0
+asian,,,drain,6.0,abdominal_gi,2024-04-22,35,0,0,0,0,6,0,1,1,0,1,SYN-I0002517,0,3,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000234,0.2363,0
+white,,37.2319,sputum,4.0,uro_nephro,2024-04-23,54,0,0,0,0,5,0,0,1,0,0,SYN-I0002493,0,5,escherichia coli,0,0,aminoglycoside-based,SYN-P002054,2.1912,0
+asian,,,drain,2.0,uro_nephro,2024-04-23,74,1,0,0,0,6,1,0,1,1,1,SYN-I0001113,0,7,escherichia coli,1,0,no_prophylaxis,SYN-P001964,0.1747,1
+asian,91.4895,36.0891,blood,,gynaecological_oncology,2024-04-25,37,1,0,0,0,41,0,1,1,0,0,SYN-I0001202,0,34,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000161,3.6015,0
+white,208.9323,36.5671,drain,9.0,vascular,2024-04-25,95,1,0,0,0,3,1,1,1,1,1,SYN-I0002299,1,4,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P002130,7.4011,0
+white,12.0624,36.4303,urine,4.0,uro_nephro,2024-04-29,78,1,1,0,1,25,0,1,1,0,0,SYN-I0002188,0,20,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002058,2.4969,0
+,110.2046,36.9957,drain,2.0,neuro_ent,2024-04-30,38,1,0,0,0,34,1,0,1,1,0,SYN-I0002197,0,29,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001357,4.7562,0
+,,,sputum,10.0,general_surgery,2024-05-05,46,1,0,1,0,14,0,1,1,1,0,SYN-I0002546,0,14,klebsiella pneumoniae,0,1,no_prophylaxis,SYN-P001229,0.2036,0
+,166.2224,37.1007,urine,5.0,cardiothoracic,2024-05-08,83,1,1,1,0,5,0,0,0,0,1,SYN-I0000992,1,3,klebsiella oxytoca,0,0,aminoglycoside-based,SYN-P002026,9.9334,0
+black,153.863,36.7667,drain,3.0,neuro_ent,2024-05-12,35,0,1,1,0,10,1,0,0,0,0,SYN-I0000550,0,10,escherichia coli,0,0,aminoglycoside-based,SYN-P000040,6.3152,0
+asian,203.3923,37.488,sputum,3.0,neuro_ent,2024-05-18,60,1,1,1,1,18,0,0,0,1,1,SYN-I0001634,0,15,escherichia coli,0,0,aminoglycoside-based,SYN-P001883,6.529,0
+white,,36.1854,wound,4.0,obs_gynae,2024-05-26,65,0,0,0,0,10,0,0,1,0,1,SYN-I0001805,1,7,escherichia coli,0,0,no_prophylaxis,SYN-P000386,7.1339,0
+asian,321.0264,36.631,wound,5.0,general_surgery,2024-05-27,57,0,1,0,0,11,0,0,1,0,0,SYN-I0002375,0,11,escherichia coli,0,0,no_prophylaxis,SYN-P001345,7.7548,0
+asian,75.1759,36.8526,drain,5.0,neuro_ent,2024-05-28,59,0,0,0,0,42,0,0,1,0,0,SYN-I0000001,0,42,proteus mirabilis,0,0,no_prophylaxis,SYN-P000827,9.5248,0
+white,20.5956,36.6097,wound,4.0,uro_nephro,2024-05-29,76,0,0,0,0,42,0,0,0,0,1,SYN-I0000475,0,40,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000060,5.7251,1
+white,289.5958,36.5725,sputum,6.0,obs_gynae,2024-05-30,54,0,0,0,0,20,0,0,0,0,0,SYN-I0001047,0,16,escherichia coli,0,0,co-amoxiclav-based,SYN-P000538,9.4446,1
+white,,36.4806,,2.0,uro_nephro,2024-05-30,62,0,0,0,0,30,0,0,1,0,0,SYN-I0002495,1,27,escherichia coli,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000837,0.2913,0
+,,36.2429,wound,10.0,abdominal_gi,2024-05-31,82,0,0,0,0,38,0,0,1,0,1,SYN-I0002296,0,12,escherichia coli,0,0,no_prophylaxis,SYN-P000175,0.6845,0
+asian,214.1135,,urine,7.0,abdominal_gi,2024-06-01,56,1,0,0,0,5,0,0,1,1,1,SYN-I0001835,0,4,escherichia coli,1,0,no_prophylaxis,SYN-P000169,0.8527,0
+,139.5647,37.0964,sputum,5.0,ortho_plastics,2024-06-02,41,0,0,1,0,23,0,1,1,0,1,SYN-I0002032,1,33,escherichia coli,0,0,limited_enterobact_activity,SYN-P002187,4.7759,1
+white,59.92,37.5887,sputum,5.0,uro_nephro,2024-06-03,61,1,0,1,0,14,0,1,0,0,1,SYN-I0000236,0,11,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000921,9.2448,1
+white,207.7159,36.5772,sputum,5.0,uro_nephro,2024-06-04,80,1,0,0,0,4,0,0,0,1,1,SYN-I0000016,0,6,klebsiella oxytoca,0,0,limited_enterobact_activity,SYN-P001176,0.5888,1
+,66.1657,36.6746,urine,6.0,vascular,2024-06-05,82,1,0,0,0,110,0,0,1,1,0,SYN-I0001365,0,40,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001795,2.6323,0
+white,6.8355,,sputum,6.0,abdominal_gi,2024-06-08,74,0,0,0,0,35,0,1,1,0,0,SYN-I0002115,0,27,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P002085,1.3087,0
+white,178.2834,36.9288,urine,5.0,obs_gynae,2024-06-08,41,0,0,0,0,28,0,1,1,0,1,SYN-I0000107,0,26,klebsiella pneumoniae,0,1,aminoglycoside-based,SYN-P001728,0.6837,0
+white,21.8899,36.7094,wound,,uro_nephro,2024-06-10,72,1,0,0,0,16,0,0,1,1,1,SYN-I0000875,0,9,klebsiella pneumoniae,1,0,aminoglycoside-based,SYN-P000604,2.2603,0
+white,145.5627,37.7,urine,3.0,abdominal_gi,2024-06-11,78,0,0,0,1,9,0,0,0,0,1,SYN-I0001075,1,11,escherichia coli,0,0,no_prophylaxis,SYN-P000622,9.9301,0
+,39.9848,36.832,urine,9.0,,2024-06-14,35,1,0,0,0,42,0,0,1,1,0,SYN-I0002402,0,40,escherichia coli,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P001693,4.4612,0
+,166.6988,36.568,sputum,4.0,obs_gynae,2024-06-15,59,0,0,0,0,15,0,0,0,0,0,SYN-I0002337,0,11,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P000840,1.4305,0
+white,306.2777,37.3331,wound,5.0,uro_nephro,2024-06-15,41,1,0,1,0,2,0,0,0,1,0,SYN-I0002279,1,2,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P001441,4.7937,0
+white,18.0089,36.4632,wound,9.0,abdominal_gi,2024-06-16,73,0,0,0,0,6,0,0,1,0,1,SYN-I0002447,1,8,escherichia coli,0,0,no_prophylaxis,SYN-P002018,8.5905,0
+,72.879,36.19,urine,3.0,vascular,2024-06-17,82,0,1,0,0,21,0,0,0,0,1,SYN-I0001454,1,12,escherichia coli,0,0,no_prophylaxis,SYN-P001504,8.0145,1
+white,,,wound,6.0,cardiothoracic,2024-06-21,62,1,0,0,0,8,0,1,1,1,0,SYN-I0001083,0,9,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001420,0.6878,0
+,183.1442,,drain,2.0,cardiothoracic,2024-06-22,59,0,0,1,0,31,0,1,0,0,1,SYN-I0000656,0,26,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000575,3.2745,1
+white,94.4791,36.657,sputum,5.0,obs_gynae,2024-06-26,42,0,0,0,0,42,0,0,1,0,1,SYN-I0000483,0,40,escherichia coli,0,0,no_prophylaxis,SYN-P000860,9.7624,1
+asian,132.4778,37.3197,blood,3.0,general_surgery,2024-06-29,56,0,1,0,0,14,0,1,0,0,1,SYN-I0000742,0,9,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P001558,6.4635,1
+white,103.194,36.5034,urine,,cardiothoracic,2024-06-30,40,0,0,1,1,12,0,0,0,0,0,SYN-I0000134,1,3,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P002059,3.9081,0
+white,230.6098,36.8345,wound,,neuro_ent,2024-06-30,82,0,1,1,1,95,0,0,0,0,1,SYN-I0002570,0,58,escherichia coli,0,0,limited_enterobact_activity,SYN-P001676,6.6588,0
+white,11.2196,37.2973,urine,6.0,uro_nephro,2024-07-09,42,1,0,0,0,29,0,0,1,0,0,SYN-I0000214,0,35,escherichia coli,0,0,aminoglycoside-based,SYN-P000819,2.1433,0
+white,11.7153,36.5075,sputum,5.0,ortho_plastics,2024-07-11,48,0,0,1,0,3,0,0,1,0,0,SYN-I0000300,0,4,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001772,1.8875,0
+white,,,urine,2.0,obs_gynae,2024-07-12,77,0,0,0,0,4,0,0,0,1,1,SYN-I0001687,0,7,klebsiella oxytoca,0,1,no_prophylaxis,SYN-P000767,0.9989,0
+,74.4382,36.3733,wound,2.0,gynaecological_oncology,2024-07-13,62,0,0,0,0,30,0,0,1,0,1,SYN-I0000308,0,28,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P001399,6.1141,0
+,70.137,36.5948,wound,2.0,uro_nephro,2024-07-15,56,1,0,0,0,10,0,0,0,1,1,SYN-I0000960,0,5,escherichia coli,0,0,aminoglycoside-based,SYN-P001646,4.8796,0
+white,175.8154,37.0872,urine,4.0,ortho_plastics,2024-07-17,65,1,0,1,0,20,1,0,0,0,0,SYN-I0001206,0,29,klebsiella pneumoniae,1,0,no_prophylaxis,SYN-P001624,3.0816,0
+white,,,wound,4.0,vascular,2024-07-18,68,1,1,1,0,31,0,0,0,1,1,SYN-I0001837,0,24,proteus mirabilis,0,0,no_prophylaxis,SYN-P001576,0.2412,0
+white,6.0374,37.7002,urine,6.0,obs_gynae,2024-07-20,52,0,0,0,0,4,0,0,1,0,1,SYN-I0002418,0,4,escherichia coli,0,0,no_prophylaxis,SYN-P001521,3.348,0
+asian,,36.5585,drain,6.0,vascular,2024-07-27,54,0,0,0,1,4,0,1,0,0,0,SYN-I0001287,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000022,0.8552,0
+white,167.0069,36.6072,sputum,10.0,ortho_plastics,2024-07-30,76,0,1,1,0,16,1,1,0,0,1,SYN-I0001302,1,6,klebsiella pneumoniae,0,0,other_broad_spectrum_gram_negative_active,SYN-P000557,2.6611,0
+white,37.3726,36.5782,urine,6.0,gynaecological_oncology,2024-08-02,51,1,1,0,0,2,0,1,0,1,1,SYN-I0000216,0,2,escherichia coli,0,0,no_prophylaxis,SYN-P000345,2.6364,0
+white,71.6001,,sputum,7.0,uro_nephro,2024-08-05,46,0,0,0,0,20,0,0,0,0,0,SYN-I0002326,0,12,escherichia coli,0,0,co-amoxiclav-based,SYN-P001135,1.1128,0
+asian,135.6442,36.7611,wound,8.0,,2024-08-05,66,1,0,1,0,15,0,0,0,1,0,SYN-I0002020,1,15,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P001102,8.3786,0
+,112.6911,36.4098,tips_devices,7.0,abdominal_gi,2024-08-06,82,0,1,1,0,38,0,1,1,0,1,SYN-I0000482,1,35,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001006,8.188,1
+,112.2675,36.2976,sputum,7.0,obs_gynae,2024-08-09,77,1,0,0,0,11,0,0,0,1,1,SYN-I0000122,0,8,escherichia coli,0,0,no_prophylaxis,SYN-P001875,2.8127,0
+white,61.703,37.7022,wound,3.0,ortho_plastics,2024-08-12,51,1,0,1,0,21,1,0,0,0,0,SYN-I0001125,0,28,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001352,7.902,0
+asian,168.4166,36.3087,urine,6.0,uro_nephro,2024-08-13,62,1,0,0,0,3,1,1,1,1,0,SYN-I0001545,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001986,9.4924,0
+white,218.0427,36.7241,urine,7.0,abdominal_gi,2024-08-13,76,1,1,0,0,8,0,1,0,1,1,SYN-I0000231,1,8,escherichia coli,0,1,no_prophylaxis,SYN-P000636,8.9286,0
+white,97.9579,36.2287,,9.0,obs_gynae,2024-08-14,65,1,0,0,0,171,0,0,0,1,1,SYN-I0001528,0,79,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001412,21.4844,0
+white,92.6147,37.322,urine,2.0,abdominal_gi,2024-08-18,60,0,1,0,0,13,0,0,1,1,0,SYN-I0000380,0,11,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000017,5.7134,0
+white,32.8812,36.6341,urine,3.0,cardiothoracic,2024-08-22,60,1,0,0,0,6,0,0,0,1,0,SYN-I0002028,1,6,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001695,2.0882,0
+,96.3342,36.7605,sputum,,obs_gynae,2024-08-24,44,0,0,0,0,11,0,0,0,0,0,SYN-I0001389,0,7,escherichia coli,0,0,no_prophylaxis,SYN-P001718,1.5845,0
+white,179.7295,36.6468,wound,5.0,cardiothoracic,2024-08-29,63,1,0,0,0,18,0,1,0,1,0,SYN-I0001112,0,14,escherichia coli,0,0,co-amoxiclav-based,SYN-P002053,4.8685,0
+black,7.2225,36.8813,,9.0,ortho_plastics,2024-09-02,73,1,1,0,0,27,0,0,1,1,1,SYN-I0000394,0,20,escherichia coli,0,0,limited_enterobact_activity,SYN-P001927,1.4661,0
+asian,98.64,,,7.0,uro_nephro,2024-09-03,58,0,0,0,0,8,0,0,1,0,1,SYN-I0000754,1,17,escherichia coli,1,0,limited_enterobact_activity,SYN-P000359,4.0421,0
+asian,,36.2152,wound,6.0,cardiothoracic,2024-09-04,78,1,0,0,0,18,0,0,0,1,1,SYN-I0001060,0,18,escherichia coli,0,0,co-amoxiclav-based,SYN-P000570,0.6654,0
+,,36.5499,wound,2.0,obs_gynae,2024-09-08,46,0,0,0,0,5,0,1,1,0,0,SYN-I0001552,0,7,escherichia coli,0,1,no_prophylaxis,SYN-P001002,4.122,0
+black,116.0349,36.5574,blood,6.0,cardiothoracic,2024-09-11,71,1,1,1,1,34,0,1,0,1,1,SYN-I0001116,1,20,escherichia coli,0,0,no_prophylaxis,SYN-P001759,3.5093,0
+,291.7768,36.0775,urine,,ortho_plastics,2024-09-13,62,1,0,0,0,6,0,1,1,1,1,SYN-I0000373,0,7,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002232,1.9414,0
+,163.4079,36.2918,drain,7.0,vascular,2024-09-14,70,1,0,0,1,18,0,0,1,1,1,SYN-I0000502,0,11,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000104,1.9193,0
+black,31.3686,36.6637,wound,2.0,uro_nephro,2024-09-14,37,1,0,0,0,68,0,0,1,0,0,SYN-I0000616,0,85,escherichia coli,0,0,co-amoxiclav-based,SYN-P001818,1.8485,1
+asian,18.6449,36.8809,urine,9.0,ortho_plastics,2024-09-14,40,0,0,0,0,5,0,0,1,0,0,SYN-I0002382,1,3,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001028,2.8812,0
+white,24.9735,36.0941,,6.0,general_surgery,2024-09-16,81,0,0,0,0,29,0,0,1,0,1,SYN-I0001183,1,19,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P002184,2.3506,0
+black,172.7871,36.5393,blood,3.0,uro_nephro,2024-09-16,79,1,0,1,0,2,0,0,0,1,1,SYN-I0000670,1,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000757,8.7944,0
+white,,,urine,3.0,abdominal_gi,2024-09-22,71,1,0,0,0,5,1,1,1,0,0,SYN-I0002339,0,7,escherichia coli,0,1,no_prophylaxis,SYN-P001922,0.5772,0
+white,30.181,37.7,,4.0,,2024-09-24,80,1,0,0,0,12,0,1,1,0,1,SYN-I0002254,0,8,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001962,0.9005,0
+asian,,36.7003,wound,2.0,neuro_ent,2024-09-26,57,1,0,0,0,5,1,0,1,1,1,SYN-I0001509,1,2,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P001578,0.2259,0
+,,36.1243,urine,8.0,neuro_ent,2024-09-26,73,1,0,0,0,30,0,0,0,0,1,SYN-I0001798,1,31,escherichia coli,0,0,no_prophylaxis,SYN-P000673,0.2292,1
+white,87.7723,,wound,3.0,uro_nephro,2024-09-27,35,0,1,0,0,11,0,0,0,0,1,SYN-I0001706,0,6,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000237,0.5997,1
+asian,285.19,36.589,wound,10.0,general_surgery,2024-09-29,65,1,0,0,0,3,0,1,0,1,1,SYN-I0001529,0,4,escherichia coli,0,0,co-amoxiclav-based,SYN-P000986,9.3319,0
+,,,sputum,3.0,vascular,2024-09-29,64,0,0,0,0,12,0,0,1,1,0,SYN-I0000639,0,9,klebsiella pneumoniae,0,0,co-amoxiclav-based,SYN-P001226,0.2322,0
+asian,,36.3807,wound,8.0,obs_gynae,2024-09-30,71,0,1,0,0,5,0,0,1,0,1,SYN-I0000925,1,7,escherichia coli,0,0,limited_enterobact_activity,SYN-P001068,1.1104,1
+,,,,5.0,vascular,2024-10-03,64,0,0,0,0,33,0,0,1,1,1,SYN-I0000484,1,24,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001027,0.2216,0
+white,,36.1563,drain,10.0,obs_gynae,2024-10-05,82,0,0,0,0,3,0,0,0,1,1,SYN-I0000480,1,3,escherichia coli,0,0,no_prophylaxis,SYN-P001783,0.2035,0
+white,172.1359,37.0795,tips_devices,2.0,uro_nephro,2024-10-08,69,1,0,1,0,30,0,0,1,0,1,SYN-I0002318,1,17,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P001695,10.1409,1
+asian,9.6925,36.9527,,7.0,ortho_plastics,2024-10-14,53,1,0,0,0,12,0,0,1,1,1,SYN-I0002395,0,16,escherichia coli,0,0,co-amoxiclav-based,SYN-P001484,2.9234,1
+,,36.3282,sputum,3.0,,2024-10-14,48,1,1,0,0,14,0,0,1,1,0,SYN-I0002121,0,25,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P001114,3.7387,0
+white,168.0659,36.7565,tissue/biopsy,8.0,uro_nephro,2024-10-14,82,0,0,0,0,16,0,0,0,0,1,SYN-I0001257,1,19,proteus mirabilis,0,0,no_prophylaxis,SYN-P001297,4.9782,0
+,,36.7108,wound,4.0,gynaecological_oncology,2024-10-15,64,0,0,1,0,33,0,0,1,0,0,SYN-I0001776,0,19,proteus mirabilis,0,0,no_prophylaxis,SYN-P001478,0.755,0
+black,110.9714,37.1375,urine,3.0,gynaecological_oncology,2024-10-15,70,0,1,1,0,17,0,0,0,0,1,SYN-I0002169,1,14,escherichia coli,0,0,no_prophylaxis,SYN-P002148,0.8142,0
+black,,,blood,4.0,cardiothoracic,2024-10-18,37,0,0,1,0,5,0,1,1,0,0,SYN-I0000599,0,6,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000979,0.1818,0
+white,,36.4827,tissue/biopsy,7.0,obs_gynae,2024-10-20,37,1,1,1,1,8,0,0,1,0,0,SYN-I0001224,0,14,klebsiella pneumoniae,0,1,cefuroxime +/- metronidazole,SYN-P001025,1.5359,0
+,120.9279,36.8569,,3.0,cardiothoracic,2024-10-20,42,0,1,0,0,3,0,0,0,0,1,SYN-I0002128,0,4,escherichia coli,0,1,no_prophylaxis,SYN-P001767,5.6672,0
+,255.8293,37.4424,wound,3.0,uro_nephro,2024-10-22,62,0,1,0,0,2,0,1,0,0,1,SYN-I0000778,0,2,escherichia coli,1,0,no_prophylaxis,SYN-P001208,0.5964,0
+white,95.3578,37.0491,tissue/biopsy,2.0,uro_nephro,2024-10-29,62,1,0,0,1,9,0,1,0,0,1,SYN-I0002511,0,6,escherichia coli,0,0,no_prophylaxis,SYN-P000014,4.3265,1
+white,161.638,37.587,urine,4.0,obs_gynae,2024-10-29,32,0,0,0,1,25,0,0,1,0,0,SYN-I0002027,0,17,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001288,2.9321,0
+white,,,drain,,vascular,2024-10-31,72,0,0,1,0,27,0,1,0,0,0,SYN-I0000668,0,30,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001847,8.1182,1
+asian,51.9768,36.3386,drain,7.0,abdominal_gi,2024-10-31,72,1,0,0,0,11,0,0,1,0,0,SYN-I0000287,0,6,escherichia coli,0,0,no_prophylaxis,SYN-P000751,1.9046,0
+black,58.857,36.3404,,10.0,neuro_ent,2024-11-01,52,0,0,0,1,23,0,0,0,0,0,SYN-I0001381,1,26,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001333,8.4387,0
+white,,,urine,2.0,neuro_ent,2024-11-06,32,1,0,1,1,18,1,0,0,1,1,SYN-I0002130,0,12,escherichia coli,1,0,aminoglycoside-based,SYN-P000404,0.2727,0
+white,,36.9085,,6.0,ortho_plastics,2024-11-13,69,1,1,0,1,2,0,0,0,1,0,SYN-I0001598,1,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000930,0.5369,0
+asian,,36.7327,sputum,2.0,neuro_ent,2024-11-14,38,1,0,1,0,11,0,0,1,1,1,SYN-I0001994,0,10,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P001223,2.6743,1
+white,,36.6503,drain,4.0,cardiothoracic,2024-11-14,44,1,0,1,0,20,0,1,1,0,0,SYN-I0001325,0,39,escherichia coli,0,0,no_prophylaxis,SYN-P001241,1.03,0
+white,9.5768,36.8874,blood,,obs_gynae,2024-11-14,37,1,0,0,0,35,0,0,1,1,0,SYN-I0002510,0,38,proteus mirabilis,0,0,no_prophylaxis,SYN-P000150,4.2735,0
+white,103.6686,36.8426,,9.0,ortho_plastics,2024-11-15,73,1,0,0,0,5,0,0,1,0,1,SYN-I0001900,1,4,escherichia coli,0,0,limited_enterobact_activity,SYN-P000207,0.3848,0
+white,204.0015,,tips_devices,7.0,vascular,2024-11-19,82,0,1,1,0,3,0,0,1,0,1,SYN-I0001405,1,4,escherichia coli,0,1,aminoglycoside-based,SYN-P000814,3.6727,0
+asian,68.0667,36.8225,urine,8.0,obs_gynae,2024-11-24,82,0,0,0,0,4,0,0,1,0,1,SYN-I0000942,0,7,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000440,2.385,0
+black,,,,7.0,uro_nephro,2024-11-25,54,1,0,0,0,8,0,0,1,1,0,SYN-I0000615,0,8,klebsiella pneumoniae,1,0,no_prophylaxis,SYN-P000592,0.3477,0
+white,270.0589,36.7802,urine,,ortho_plastics,2024-11-25,59,0,0,1,0,8,0,0,1,0,0,SYN-I0000194,0,6,escherichia coli,0,0,no_prophylaxis,SYN-P000895,8.2522,0
+,281.3973,37.4271,urine,9.0,abdominal_gi,2024-11-28,59,1,0,0,0,2,0,0,1,1,1,SYN-I0002268,0,2,escherichia coli,0,0,co-amoxiclav-based,SYN-P000135,2.8486,0
+,314.734,37.3873,wound,7.0,uro_nephro,2024-12-01,76,1,0,0,0,27,0,0,0,1,1,SYN-I0002018,0,31,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P001766,7.8499,0
+,116.6014,,urine,5.0,,2024-12-02,64,1,1,0,0,9,0,0,1,1,0,SYN-I0000975,0,12,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000611,1.4948,0
+white,56.8013,36.3914,drain,9.0,obs_gynae,2024-12-05,62,0,0,0,0,19,0,1,0,0,0,SYN-I0000796,0,19,escherichia coli,0,0,limited_enterobact_activity,SYN-P001834,3.4326,0
+white,6.192,36.2883,wound,6.0,vascular,2024-12-05,57,1,0,0,0,34,1,0,0,1,1,SYN-I0002308,0,14,escherichia coli,0,0,co-amoxiclav-based,SYN-P001384,0.2012,0
+asian,27.8914,,urine,5.0,general_surgery,2024-12-08,57,0,0,0,0,187,0,0,1,0,0,SYN-I0001544,0,40,escherichia coli,0,0,co-amoxiclav-based,SYN-P000779,0.6021,0
+white,34.1034,36.5859,sputum,5.0,uro_nephro,2024-12-10,65,0,0,0,1,42,0,0,1,0,1,SYN-I0001295,1,37,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P000455,5.8584,0
+black,37.53,36.95,wound,4.0,uro_nephro,2024-12-12,71,1,0,0,1,7,0,1,0,1,1,SYN-I0000533,0,7,klebsiella pneumoniae,0,1,no_prophylaxis,SYN-P002209,5.2798,0
+white,69.231,36.5374,,4.0,neuro_ent,2024-12-12,71,1,0,0,0,7,0,0,1,1,0,SYN-I0002146,0,4,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000566,1.3995,0
+,74.304,36.6679,tissue/biopsy,10.0,general_surgery,2024-12-14,62,0,0,0,0,18,0,0,1,0,1,SYN-I0001597,0,10,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P000800,1.9451,0
+,319.9634,,wound,6.0,uro_nephro,2024-12-18,64,0,1,0,0,11,0,0,1,0,1,SYN-I0001300,0,9,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002238,0.2477,0
+white,,36.8269,urine,9.0,uro_nephro,2024-12-18,46,0,0,0,0,12,0,1,0,0,0,SYN-I0002155,0,7,escherichia coli,0,0,no_prophylaxis,SYN-P001690,2.5018,0
+white,95.2543,37.2952,,4.0,abdominal_gi,2024-12-19,52,0,1,1,1,11,0,0,0,0,0,SYN-I0002426,1,8,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001099,5.0624,1
+,61.1653,36.92,drain,4.0,uro_nephro,2024-12-23,65,0,0,0,0,19,0,1,1,0,1,SYN-I0000758,1,17,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000363,3.0092,1
+,193.7413,36.4934,wound,4.0,uro_nephro,2024-12-25,48,0,0,1,0,15,0,0,1,0,0,SYN-I0001433,1,16,escherichia coli,0,0,no_prophylaxis,SYN-P001580,4.1302,0
+,36.6775,36.7194,urine,3.0,uro_nephro,2024-12-26,62,0,0,0,0,10,0,0,0,0,0,SYN-I0001989,0,10,klebsiella pneumoniae,1,0,limited_enterobact_activity,SYN-P000864,2.5458,0
+white,,36.3747,sputum,3.0,,2024-12-29,52,1,0,0,0,9,0,0,1,1,0,SYN-I0002252,0,6,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001406,0.5466,0
+,,,urine,6.0,abdominal_gi,2024-12-30,81,0,0,1,0,11,0,1,0,0,1,SYN-I0001106,0,11,escherichia coli,0,1,co-amoxiclav-based,SYN-P000838,1.5428,0
+white,207.2887,39.0566,wound,10.0,,2025-01-01,56,1,0,0,0,23,0,0,1,0,1,SYN-I0001159,0,30,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002188,4.8206,0
+white,,36.9986,blood,8.0,neuro_ent,2025-01-02,82,0,0,0,0,44,0,1,0,1,1,SYN-I0000013,0,35,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001201,1.8288,0
+,,36.0997,urine,2.0,abdominal_gi,2025-01-06,54,1,0,1,0,45,0,1,1,1,0,SYN-I0002422,0,67,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001096,2.3624,0
+black,304.3288,,,6.0,vascular,2025-01-06,72,0,0,0,0,8,1,0,0,0,1,SYN-I0002201,1,4,klebsiella oxytoca,0,0,cefuroxime +/- metronidazole,SYN-P000284,2.4085,0
+white,32.6605,37.0832,urine,4.0,uro_nephro,2025-01-07,32,0,1,0,0,36,0,0,0,0,0,SYN-I0001818,1,27,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001770,0.6993,1
+,,37.4506,urine,5.0,general_surgery,2025-01-08,47,0,0,0,0,2,0,0,1,0,0,SYN-I0000678,0,3,proteus mirabilis,1,0,aminoglycoside-based,SYN-P001090,1.5134,0
+asian,257.3134,37.3133,urine,6.0,obs_gynae,2025-01-10,77,1,1,0,0,8,0,0,1,1,0,SYN-I0001919,0,11,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P001115,3.1248,0
+white,,36.5384,urine,7.0,general_surgery,2025-01-11,43,0,0,1,0,9,0,0,1,0,0,SYN-I0001400,0,7,escherichia coli,0,0,no_prophylaxis,SYN-P000505,1.9743,0
+white,160.4095,36.8298,blood,6.0,abdominal_gi,2025-01-15,59,0,1,0,0,33,0,0,0,0,1,SYN-I0002090,1,35,escherichia coli,0,0,limited_enterobact_activity,SYN-P001317,2.5876,0
+asian,191.4785,36.8838,blood,6.0,neuro_ent,2025-01-15,71,1,0,0,1,5,0,0,0,1,1,SYN-I0000068,1,9,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P000829,3.5997,0
+white,50.2761,,sputum,5.0,abdominal_gi,2025-01-16,68,0,0,0,0,16,0,0,0,0,1,SYN-I0000160,1,22,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000131,1.6826,0
+white,149.9598,37.2022,urine,10.0,abdominal_gi,2025-01-18,52,0,0,0,0,8,0,0,0,0,0,SYN-I0000683,1,5,proteus mirabilis,0,0,aminoglycoside-based,SYN-P001981,5.6254,0
+white,192.6475,37.6824,drain,9.0,obs_gynae,2025-01-19,33,0,1,0,0,4,0,0,1,0,0,SYN-I0000554,0,3,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001806,4.895,0
+,,36.7075,drain,10.0,uro_nephro,2025-01-21,80,1,0,0,0,11,1,0,1,0,0,SYN-I0001034,0,13,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000871,5.3817,0
+white,317.4355,36.8208,urine,5.0,neuro_ent,2025-01-21,37,1,0,0,0,13,0,1,0,1,1,SYN-I0002066,0,20,escherichia coli,0,1,co-amoxiclav-based,SYN-P002218,6.1654,0
+black,172.4918,36.3884,drain,4.0,ortho_plastics,2025-01-22,65,0,1,0,0,2,0,0,1,0,1,SYN-I0002453,0,2,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001045,1.0636,0
+white,,36.6891,blood,5.0,abdominal_gi,2025-01-23,52,0,0,0,0,18,0,0,1,0,0,SYN-I0002361,1,15,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P002049,0.7938,0
+white,,36.764,sputum,3.0,obs_gynae,2025-01-28,30,1,0,0,0,25,0,0,0,1,0,SYN-I0001930,0,25,escherichia coli,1,0,limited_enterobact_activity,SYN-P000158,1.7731,0
+black,256.9824,36.5124,urine,4.0,abdominal_gi,2025-01-29,80,0,0,1,0,17,0,1,0,0,1,SYN-I0000072,1,17,escherichia coli,0,0,aminoglycoside-based,SYN-P001291,4.5481,1
+white,24.7019,36.5952,urine,2.0,abdominal_gi,2025-01-31,62,1,0,0,0,19,0,1,1,1,0,SYN-I0001411,1,16,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P002153,2.7477,0
+asian,,36.8027,blood,8.0,neuro_ent,2025-02-04,36,0,0,0,0,5,0,0,1,0,0,SYN-I0002214,0,10,escherichia coli,0,0,limited_enterobact_activity,SYN-P000033,0.8467,0
+white,169.3359,36.9958,urine,4.0,abdominal_gi,2025-02-08,57,1,1,1,0,18,0,0,1,1,0,SYN-I0000129,0,17,escherichia coli,1,0,no_prophylaxis,SYN-P001930,0.2298,0
+white,159.7212,37.1266,,4.0,neuro_ent,2025-02-08,64,0,1,1,1,5,0,0,0,0,0,SYN-I0001370,1,3,escherichia coli,0,0,co-amoxiclav-based,SYN-P001560,10.0399,0
+,30.0617,36.1542,urine,3.0,general_surgery,2025-02-09,46,0,0,0,0,42,0,0,1,0,0,SYN-I0002097,1,45,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P002068,7.1868,0
+white,,36.4414,wound,10.0,general_surgery,2025-02-11,42,1,1,0,1,2,0,0,1,1,0,SYN-I0000477,0,4,escherichia coli,0,0,limited_enterobact_activity,SYN-P000751,0.233,0
+white,174.727,36.9095,,,neuro_ent,2025-02-13,56,1,1,0,0,27,0,0,0,1,1,SYN-I0000112,0,17,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P001465,6.3458,0
+white,114.0242,36.9827,urine,9.0,general_surgery,2025-02-14,50,1,0,0,0,14,1,1,0,0,1,SYN-I0000589,0,11,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000175,5.5864,0
+,57.2556,37.373,blood,6.0,obs_gynae,2025-02-20,59,0,0,1,0,42,0,1,1,0,0,SYN-I0002336,0,41,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000360,5.8679,0
+white,75.8536,36.5132,tissue/biopsy,3.0,gynaecological_oncology,2025-02-21,79,0,1,0,1,2,0,0,0,0,1,SYN-I0000894,1,3,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001900,1.0837,1
+asian,,36.6966,wound,2.0,obs_gynae,2025-02-21,52,0,0,0,0,12,0,0,1,0,1,SYN-I0000862,0,4,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001667,0.2061,0
+,,36.1941,urine,5.0,neuro_ent,2025-02-22,79,0,0,1,0,8,0,1,1,0,1,SYN-I0001445,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001531,1.0086,0
+asian,,,,7.0,uro_nephro,2025-02-26,75,1,0,0,1,17,0,0,0,1,0,SYN-I0000206,0,13,escherichia coli,0,1,cefuroxime +/- metronidazole,SYN-P000888,0.893,0
+white,157.988,36.329,sputum,9.0,abdominal_gi,2025-02-27,54,0,1,0,0,30,0,0,1,0,0,SYN-I0002292,0,23,escherichia coli,0,0,aminoglycoside-based,SYN-P001217,4.483,0
+white,,36.1636,urine,4.0,ortho_plastics,2025-03-03,70,1,0,0,0,31,0,0,1,1,1,SYN-I0001917,0,31,klebsiella oxytoca,0,0,limited_enterobact_activity,SYN-P001679,4.9081,0
+white,51.2853,36.5896,,7.0,ortho_plastics,2025-03-04,77,0,0,0,0,32,1,1,0,0,1,SYN-I0002232,0,28,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000490,3.5894,0
+white,39.338,36.054,urine,6.0,abdominal_gi,2025-03-04,80,0,0,1,0,49,0,1,0,0,0,SYN-I0001503,0,40,klebsiella oxytoca,0,1,cefuroxime +/- metronidazole,SYN-P001902,4.1185,0
+,38.1893,,blood,7.0,cardiothoracic,2025-03-07,66,1,0,0,0,4,0,1,1,1,0,SYN-I0001866,0,7,escherichia coli,0,0,no_prophylaxis,SYN-P000167,2.6156,1
+black,43.9567,36.5441,sputum,7.0,abdominal_gi,2025-03-08,75,0,0,0,0,13,0,0,0,0,0,SYN-I0000902,1,14,escherichia coli,0,0,co-amoxiclav-based,SYN-P000289,6.2752,0
+white,,36.3662,tissue/biopsy,7.0,gynaecological_oncology,2025-03-12,59,0,0,0,0,3,0,0,1,0,1,SYN-I0000865,0,4,escherichia coli,0,0,no_prophylaxis,SYN-P001034,5.5832,0
+white,168.8155,37.7,urine,3.0,obs_gynae,2025-03-15,52,0,0,0,0,5,0,0,0,0,1,SYN-I0000687,0,3,klebsiella oxytoca,0,0,limited_enterobact_activity,SYN-P001306,0.9188,1
+black,289.0234,36.6264,,2.0,abdominal_gi,2025-03-16,36,0,1,1,0,4,0,0,0,1,0,SYN-I0002007,0,6,escherichia coli,0,0,limited_enterobact_activity,SYN-P002047,6.7378,0
+asian,,36.5762,urine,7.0,,2025-03-16,55,0,0,0,0,12,0,1,1,0,0,SYN-I0001258,0,6,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000512,0.7717,0
+white,212.9225,37.069,drain,2.0,uro_nephro,2025-03-18,58,1,0,0,0,3,1,0,0,1,1,SYN-I0001285,0,4,escherichia coli,0,0,no_prophylaxis,SYN-P000969,4.0317,0
+,41.9898,36.8893,urine,3.0,obs_gynae,2025-03-19,82,1,0,0,0,4,0,0,1,1,1,SYN-I0000369,1,2,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001784,7.9661,1
+asian,99.5347,36.2474,wound,,cardiothoracic,2025-03-23,74,1,1,0,0,12,0,1,0,1,0,SYN-I0001377,0,5,escherichia coli,0,0,limited_enterobact_activity,SYN-P000590,8.7562,0
+asian,,36.7271,wound,5.0,obs_gynae,2025-03-23,51,1,0,0,0,2,1,0,1,1,0,SYN-I0002050,0,2,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P001979,1.6361,0
+,29.0295,37.6589,wound,2.0,obs_gynae,2025-03-24,57,1,0,1,0,11,0,0,1,1,0,SYN-I0000147,0,14,escherichia coli,0,0,co-amoxiclav-based,SYN-P001882,1.4057,0
+asian,178.8802,36.6172,tissue/biopsy,5.0,gynaecological_oncology,2025-03-24,82,1,1,0,0,10,0,0,1,0,1,SYN-I0000920,0,5,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000305,9.927,0
+,122.8815,36.5355,sputum,7.0,ortho_plastics,2025-03-27,74,0,1,0,0,9,0,0,1,0,0,SYN-I0002240,1,7,escherichia coli,0,0,co-amoxiclav-based,SYN-P000681,0.4444,0
+white,212.298,36.9836,wound,4.0,general_surgery,2025-03-28,55,1,0,0,0,8,0,0,1,1,0,SYN-I0000800,0,10,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000072,0.535,1
+,,36.1211,blood,10.0,abdominal_gi,2025-03-28,66,0,1,0,0,13,0,0,1,0,0,SYN-I0000365,0,7,escherichia coli,0,0,no_prophylaxis,SYN-P001876,0.4908,0
+white,84.6246,,drain,3.0,neuro_ent,2025-03-29,64,1,0,0,0,6,0,1,0,1,0,SYN-I0002077,0,9,escherichia coli,0,0,co-amoxiclav-based,SYN-P001094,0.9578,0
+white,42.8498,36.6955,drain,6.0,ortho_plastics,2025-04-05,79,0,0,0,0,38,0,0,0,0,1,SYN-I0000098,1,37,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000204,9.2103,1
+,87.0388,36.9949,urine,9.0,gynaecological_oncology,2025-04-08,68,0,1,0,0,10,0,1,1,0,0,SYN-I0001382,0,17,escherichia coli,0,1,aminoglycoside-based,SYN-P001730,1.8616,0
+,,36.0398,wound,3.0,uro_nephro,2025-04-09,75,1,1,0,0,6,0,1,0,1,1,SYN-I0001813,0,5,klebsiella pneumoniae,1,1,cefuroxime +/- metronidazole,SYN-P000381,0.439,0
+,252.5954,37.7001,urine,2.0,cardiothoracic,2025-04-09,36,1,0,0,1,4,1,0,0,1,1,SYN-I0002183,0,5,klebsiella oxytoca,1,0,limited_enterobact_activity,SYN-P000791,1.6484,0
+white,293.6937,,drain,7.0,abdominal_gi,2025-04-09,69,0,1,0,0,4,0,1,0,0,0,SYN-I0000274,0,9,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000950,8.0648,0
+white,,36.5658,blood,6.0,neuro_ent,2025-04-12,33,0,0,0,0,8,1,0,1,0,0,SYN-I0001276,0,3,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P000671,0.41,0
+white,106.9188,36.7652,drain,7.0,obs_gynae,2025-04-14,65,1,0,0,0,21,0,0,1,1,0,SYN-I0000426,0,26,escherichia coli,0,0,no_prophylaxis,SYN-P000422,4.9584,0
+,35.5882,36.9871,,2.0,uro_nephro,2025-04-15,75,0,1,0,0,12,0,1,0,0,1,SYN-I0000436,1,9,escherichia coli,0,1,no_prophylaxis,SYN-P000431,2.1573,0
+,203.7577,36.6051,drain,10.0,uro_nephro,2025-04-15,58,1,0,0,0,32,0,0,0,1,0,SYN-I0000652,0,43,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001942,4.9881,0
+,,36.4988,,4.0,gynaecological_oncology,2025-04-16,63,1,0,0,0,7,1,0,1,1,1,SYN-I0002272,1,22,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001048,0.9417,0
+black,,36.856,sputum,6.0,abdominal_gi,2025-04-28,42,1,0,0,0,38,0,1,1,1,0,SYN-I0001685,1,35,escherichia coli,0,0,no_prophylaxis,SYN-P001496,0.7202,0
+,295.4186,36.9071,urine,,obs_gynae,2025-04-28,45,1,0,0,1,17,0,0,0,1,0,SYN-I0002332,0,14,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P000886,1.6099,0
+white,4.8633,36.5537,urine,7.0,general_surgery,2025-04-29,45,0,0,0,0,42,0,0,1,0,1,SYN-I0001804,0,37,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P000051,0.7244,0
+,12.4557,36.6177,,4.0,uro_nephro,2025-05-01,65,0,1,1,0,42,0,0,1,0,0,SYN-I0001025,0,128,proteus mirabilis,0,0,no_prophylaxis,SYN-P002138,7.0469,1
+white,84.8635,36.9911,wound,2.0,general_surgery,2025-05-05,60,0,0,1,0,37,1,0,0,0,1,SYN-I0000116,1,35,escherichia coli,0,0,no_prophylaxis,SYN-P001553,2.5573,1
+black,164.3307,36.7636,urine,2.0,neuro_ent,2025-05-05,61,0,0,0,1,40,0,1,1,0,0,SYN-I0001135,0,32,escherichia coli,0,0,no_prophylaxis,SYN-P001727,2.7662,1
+,28.9342,36.6689,urine,9.0,cardiothoracic,2025-05-05,59,0,1,0,0,19,0,1,1,0,1,SYN-I0001432,0,25,klebsiella pneumoniae,0,0,co-amoxiclav-based,SYN-P001252,4.8372,0
+,192.9394,37.7,urine,5.0,gynaecological_oncology,2025-05-06,38,1,1,0,0,41,1,0,0,0,0,SYN-I0000200,0,19,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001785,1.9688,0
+white,,,drain,10.0,abdominal_gi,2025-05-06,79,1,0,0,0,15,1,1,1,0,0,SYN-I0002180,0,19,escherichia coli,0,0,co-amoxiclav-based,SYN-P001270,0.9375,0
+white,,,wound,4.0,general_surgery,2025-05-07,53,0,1,0,0,116,0,0,0,0,0,SYN-I0001977,1,174,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P001686,0.2707,0
+white,180.2514,36.0953,sputum,7.0,neuro_ent,2025-05-11,66,0,0,0,1,10,0,1,0,0,1,SYN-I0001756,0,17,escherichia coli,0,0,co-amoxiclav-based,SYN-P000358,4.9945,0
+white,117.9099,36.5415,,3.0,cardiothoracic,2025-05-14,86,0,0,1,0,9,1,1,1,0,1,SYN-I0000260,1,4,escherichia coli,0,0,limited_enterobact_activity,SYN-P001278,9.9268,0
+white,,36.8355,wound,7.0,general_surgery,2025-05-17,46,0,0,1,0,9,0,0,1,0,0,SYN-I0001695,0,8,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P002084,0.3214,0
+white,173.5588,36.287,urine,6.0,general_surgery,2025-05-18,73,0,0,0,0,20,0,0,0,0,1,SYN-I0002163,1,15,escherichia coli,0,1,co-amoxiclav-based,SYN-P002024,8.8999,0
+white,,,drain,8.0,obs_gynae,2025-05-19,30,1,0,0,0,23,0,0,1,1,0,SYN-I0002298,0,36,escherichia coli,0,0,no_prophylaxis,SYN-P000154,2.8619,0
+white,193.1952,37.3879,urine,8.0,ortho_plastics,2025-05-19,67,0,0,0,0,29,0,1,0,0,0,SYN-I0000162,0,25,escherichia coli,0,0,limited_enterobact_activity,SYN-P000950,6.2856,1
+white,,36.8292,wound,8.0,cardiothoracic,2025-05-21,71,1,0,0,0,10,0,1,0,1,1,SYN-I0000053,1,11,escherichia coli,0,0,co-amoxiclav-based,SYN-P001207,2.8653,1
+white,21.467,37.3169,blood,4.0,uro_nephro,2025-05-22,63,1,0,1,0,41,1,0,0,1,0,SYN-I0001366,1,39,escherichia coli,1,0,limited_enterobact_activity,SYN-P002056,6.5953,1
+asian,,37.6439,drain,7.0,gynaecological_oncology,2025-05-22,65,1,0,0,0,12,0,1,0,1,1,SYN-I0000341,0,7,escherichia coli,0,0,co-amoxiclav-based,SYN-P000640,0.3359,0
+black,301.4977,36.4106,,5.0,obs_gynae,2025-05-22,79,0,0,1,0,4,0,1,0,0,1,SYN-I0001021,0,5,escherichia coli,0,0,no_prophylaxis,SYN-P000526,11.2844,1
+black,,36.4972,blood,10.0,uro_nephro,2025-05-27,78,1,1,0,0,8,1,0,1,1,0,SYN-I0000399,0,4,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P001498,2.0815,0
+asian,,,,2.0,,2025-06-02,35,1,1,0,0,4,0,0,1,1,0,SYN-I0002101,0,3,proteus mirabilis,1,0,cefuroxime +/- metronidazole,SYN-P000850,0.1713,1
+white,157.7691,36.7915,tips_devices,3.0,neuro_ent,2025-06-03,55,0,0,0,0,15,0,0,1,0,1,SYN-I0001577,0,14,klebsiella oxytoca,0,0,no_prophylaxis,SYN-P002112,1.4255,0
+black,10.6947,36.6187,urine,2.0,obs_gynae,2025-06-04,39,0,0,0,0,15,0,0,1,0,1,SYN-I0000998,1,17,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P001524,1.338,1
+asian,217.0673,36.6368,,6.0,abdominal_gi,2025-06-05,57,0,0,0,0,15,0,1,1,0,1,SYN-I0001177,1,14,proteus mirabilis,0,0,limited_enterobact_activity,SYN-P001816,5.0272,1
+asian,,36.926,tips_devices,6.0,uro_nephro,2025-06-08,44,0,0,1,0,34,1,0,1,0,0,SYN-I0001526,0,31,escherichia coli,1,0,cefuroxime +/- metronidazole,SYN-P002039,0.4825,0
+,,,drain,4.0,neuro_ent,2025-06-08,52,0,0,0,0,18,0,0,1,1,0,SYN-I0002363,0,22,escherichia coli,0,0,no_prophylaxis,SYN-P000373,1.8533,0
+white,154.1604,,urine,5.0,uro_nephro,2025-06-08,60,1,0,1,1,16,0,0,0,0,0,SYN-I0000060,1,14,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P000704,1.9958,0
+white,6.8911,36.801,urine,6.0,uro_nephro,2025-06-08,30,0,0,0,0,12,0,0,0,0,1,SYN-I0002437,0,18,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P001530,5.8779,1
+,,36.7594,wound,3.0,neuro_ent,2025-06-10,51,1,0,1,0,29,1,1,1,1,1,SYN-I0001965,1,31,escherichia coli,0,0,no_prophylaxis,SYN-P000303,0.2421,0
+,,,wound,6.0,vascular,2025-06-10,73,0,0,1,0,2,0,0,0,0,0,SYN-I0002387,0,2,escherichia coli,0,1,co-amoxiclav-based,SYN-P000812,2.6671,0
+asian,189.8993,36.6361,drain,2.0,,2025-06-11,84,0,0,0,0,10,0,1,0,0,1,SYN-I0001469,1,14,escherichia coli,1,0,no_prophylaxis,SYN-P000879,9.2953,1
+white,104.699,36.9645,urine,2.0,,2025-06-12,36,0,0,0,0,41,0,0,0,0,0,SYN-I0001998,0,40,escherichia coli,0,0,no_prophylaxis,SYN-P001267,3.9583,0
+black,54.5301,36.9378,wound,5.0,vascular,2025-06-13,76,1,1,0,0,9,0,0,0,1,0,SYN-I0002425,0,4,escherichia coli,0,0,co-amoxiclav-based,SYN-P000531,9.9451,1
+asian,215.9556,36.5588,urine,5.0,general_surgery,2025-06-14,55,0,0,0,1,7,0,0,1,1,1,SYN-I0000368,0,10,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000850,6.3907,0
+,,,urine,2.0,general_surgery,2025-06-18,39,1,0,0,0,7,1,1,1,0,0,SYN-I0001172,0,4,escherichia coli,1,1,co-amoxiclav-based,SYN-P000762,0.5818,0
+,,,tips_devices,5.0,neuro_ent,2025-06-18,54,0,0,0,0,6,0,1,1,0,0,SYN-I0000070,1,8,klebsiella pneumoniae,0,1,cefuroxime +/- metronidazole,SYN-P000990,0.1965,0
+asian,29.8517,36.948,,5.0,gynaecological_oncology,2025-06-21,29,1,0,0,0,2,1,1,1,1,0,SYN-I0000604,0,2,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P000676,16.0551,0
+asian,21.3301,35.8621,sputum,5.0,uro_nephro,2025-06-23,78,0,0,0,0,36,0,0,1,0,0,SYN-I0000105,0,34,escherichia coli,0,0,cefuroxime +/- metronidazole + aminoglycoside,SYN-P000477,3.1227,0
+white,313.9387,36.8111,urine,7.0,uro_nephro,2025-06-28,36,0,0,0,0,3,0,1,0,0,0,SYN-I0001491,0,2,escherichia coli,0,1,no_prophylaxis,SYN-P001331,3.5195,0
+,,,drain,2.0,,2025-06-29,40,1,0,0,0,25,0,0,1,1,1,SYN-I0000845,0,12,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P000908,1.5863,0
+,272.1155,37.7033,wound,9.0,obs_gynae,2025-07-01,68,0,0,0,0,38,0,0,1,1,0,SYN-I0000207,0,23,escherichia coli,0,0,co-amoxiclav-based,SYN-P001197,2.5426,0
+,,37.4162,tissue/biopsy,7.0,uro_nephro,2025-07-02,46,1,1,0,0,14,0,1,1,1,0,SYN-I0001745,0,18,escherichia coli,1,1,no_prophylaxis,SYN-P000492,2.5881,0
+asian,,37.1507,,6.0,general_surgery,2025-07-04,80,0,1,0,1,20,0,0,0,0,1,SYN-I0002373,1,13,escherichia coli,0,0,no_prophylaxis,SYN-P001325,2.7253,0
+,,37.3717,wound,5.0,abdominal_gi,2025-07-06,44,0,0,0,0,35,0,0,1,0,1,SYN-I0000669,1,39,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P000046,3.5334,1
+,6.7422,36.0359,sputum,3.0,gynaecological_oncology,2025-07-09,63,0,0,0,0,41,0,0,1,0,1,SYN-I0000337,0,33,escherichia coli,0,0,limited_enterobact_activity,SYN-P001812,2.5716,1
+white,159.4795,37.4404,,5.0,ortho_plastics,2025-07-11,81,0,0,0,0,16,0,1,0,0,1,SYN-I0001452,1,19,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000418,9.9358,0
+black,91.44,36.2339,urine,5.0,general_surgery,2025-07-12,52,0,0,0,0,19,0,1,1,0,0,SYN-I0000346,0,20,klebsiella pneumoniae,0,1,cefuroxime +/- metronidazole,SYN-P000534,3.1,0
+asian,,36.8331,sputum,6.0,vascular,2025-07-13,35,0,0,0,0,17,0,0,1,0,0,SYN-I0002054,0,19,escherichia coli,0,0,no_prophylaxis,SYN-P001580,1.3824,0
+white,59.8031,37.7093,urine,3.0,ortho_plastics,2025-07-13,66,0,0,0,0,30,0,0,1,0,1,SYN-I0000605,1,37,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000563,2.4794,1
+asian,88.536,36.1122,urine,6.0,abdominal_gi,2025-07-13,63,0,0,1,0,2,0,1,0,0,1,SYN-I0000535,1,5,escherichia coli,0,0,no_prophylaxis,SYN-P001637,4.4911,1
+,,36.646,drain,4.0,obs_gynae,2025-07-16,50,1,0,0,1,3,0,0,1,1,1,SYN-I0000437,1,2,proteus mirabilis,0,0,cefuroxime +/- metronidazole,SYN-P000019,2.0509,0
+white,,,drain,3.0,,2025-07-17,59,1,0,0,0,20,0,1,0,1,0,SYN-I0002111,0,35,proteus mirabilis,0,0,no_prophylaxis,SYN-P001735,2.621,0
+,60.6199,36.5729,,,,2025-07-19,62,1,0,1,0,11,1,0,1,1,0,SYN-I0001037,0,10,escherichia coli,0,0,no_prophylaxis,SYN-P000148,3.8562,0
+black,,36.9237,drain,8.0,ortho_plastics,2025-07-29,82,1,0,0,0,18,1,0,0,1,1,SYN-I0001625,0,12,klebsiella pneumoniae,0,0,co-amoxiclav-based,SYN-P000550,1.7704,1
+white,,36.865,blood,4.0,neuro_ent,2025-07-30,62,0,0,1,1,6,0,0,1,0,1,SYN-I0002269,0,6,escherichia coli,0,0,no_prophylaxis,SYN-P001231,1.1149,0
+white,,36.8006,urine,3.0,vascular,2025-07-31,44,1,0,0,0,3,0,0,1,1,1,SYN-I0002390,0,3,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000691,6.3532,0
+white,317.3,37.597,urine,7.0,vascular,2025-08-02,76,1,1,0,0,15,0,1,0,1,1,SYN-I0000993,1,11,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P000729,14.9683,0
+asian,,,sputum,7.0,abdominal_gi,2025-08-07,52,0,0,0,0,26,0,0,0,0,0,SYN-I0001894,0,30,escherichia coli,0,0,no_prophylaxis,SYN-P000491,0.4505,0
+,307.1404,36.8341,tips_devices,9.0,gynaecological_oncology,2025-08-07,79,1,1,1,0,6,0,1,1,1,1,SYN-I0001921,0,6,klebsiella pneumoniae,0,0,cefuroxime +/- metronidazole,SYN-P002008,5.1122,1
+,,,wound,6.0,cardiothoracic,2025-08-08,66,0,0,0,1,12,0,1,0,0,0,SYN-I0002260,1,9,klebsiella pneumoniae,0,0,no_prophylaxis,SYN-P001034,1.9646,0
+white,9.861,36.6739,wound,10.0,vascular,2025-08-08,60,0,0,0,0,16,0,0,1,0,1,SYN-I0002245,1,14,escherichia coli,0,0,limited_enterobact_activity,SYN-P000246,2.6255,0
+,80.3389,,wound,2.0,cardiothoracic,2025-08-08,56,0,1,0,0,10,0,1,0,0,0,SYN-I0002555,1,8,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P001788,1.4118,0
+,6.6774,36.5459,urine,8.0,gynaecological_oncology,2025-08-08,69,0,1,0,0,31,1,1,1,0,0,SYN-I0001270,0,29,escherichia coli,0,0,limited_enterobact_activity,SYN-P000998,2.3107,0
+white,,,urine,4.0,uro_nephro,2025-08-09,80,0,0,1,0,5,0,0,0,0,1,SYN-I0000680,0,9,escherichia coli,0,0,aminoglycoside-based,SYN-P000711,0.9121,0
+black,25.0489,36.4525,drain,10.0,abdominal_gi,2025-08-11,80,1,0,0,0,2,0,1,1,1,1,SYN-I0001941,1,3,escherichia coli,0,0,no_prophylaxis,SYN-P001069,5.4538,0
+white,,36.8542,tissue/biopsy,5.0,cardiothoracic,2025-08-11,81,1,0,0,0,8,0,0,0,1,1,SYN-I0000524,1,6,klebsiella pneumoniae,0,0,limited_enterobact_activity,SYN-P002234,1.094,1
+,,,wound,8.0,uro_nephro,2025-08-13,32,0,1,0,0,12,0,1,1,0,0,SYN-I0002168,0,11,escherichia coli,0,0,co-amoxiclav-based,SYN-P001462,3.284,0
+asian,,36.9451,wound,4.0,gynaecological_oncology,2025-08-14,36,0,0,0,0,14,0,0,1,0,1,SYN-I0000238,0,15,klebsiella pneumoniae,0,0,aminoglycoside-based,SYN-P000558,1.065,0
+,147.174,36.6866,sputum,4.0,vascular,2025-08-14,67,0,0,0,0,8,0,1,1,0,1,SYN-I0000057,1,7,escherichia coli,0,0,no_prophylaxis,SYN-P000072,8.847,1
+,63.6513,36.3183,wound,10.0,vascular,2025-08-16,46,0,0,0,0,40,0,0,0,0,0,SYN-I0000572,0,40,escherichia coli,0,0,no_prophylaxis,SYN-P001829,1.0369,0
+,302.1464,36.5546,urine,10.0,general_surgery,2025-08-18,50,1,1,0,0,5,0,0,0,1,1,SYN-I0002176,1,7,escherichia coli,0,0,cefuroxime +/- metronidazole,SYN-P000635,8.22,0
+,181.6203,36.833,urine,8.0,abdominal_gi,2025-08-18,60,0,1,1,0,12,0,1,1,0,1,SYN-I0000565,0,11,escherichia coli,0,0,no_prophylaxis,SYN-P001259,4.0016,1
+white,106.6429,36.2767,sputum,7.0,,2025-08-19,45,1,0,0,1,18,0,0,0,1,1,SYN-I0002456,1,22,escherichia coli,0,0,no_prophylaxis,SYN-P001898,7.3575,0
+white,126.1585,36.7151,tissue/biopsy,,uro_nephro,2025-08-23,67,0,1,0,0,13,1,0,1,0,0,SYN-I0000506,0,15,klebsiella pneumoniae,0,0,co-amoxiclav-based,SYN-P000250,4.0871,0
+white,,36.6607,wound,2.0,cardiothoracic,2025-08-26,69,1,0,0,0,11,1,0,0,1,0,SYN-I0001010,0,13,proteus mirabilis,1,0,limited_enterobact_activity,SYN-P000347,0.7052,0
+white,42.9935,36.6019,drain,6.0,ortho_plastics,2025-08-27,55,0,0,0,0,36,0,0,1,0,1,SYN-I0000091,0,37,escherichia coli,0,0,other_broad_spectrum_gram_negative_active,SYN-P001313,2.2479,1

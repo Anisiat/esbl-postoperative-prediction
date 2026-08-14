@@ -6,7 +6,7 @@ from pathlib import Path
 
 import numpy as np
 
-from src.generate_synthetic_data import (
+from scripts.generate_synthetic_data import (
     apply_categorical_pairs,
     apply_rank_dependencies,
 )

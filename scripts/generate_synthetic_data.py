@@ -8,7 +8,7 @@ between predictors and ``esbl_status``.
 
 Example
 -------
-python -m src.generate_synthetic_data
+python -m scripts.generate_synthetic_data
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ DEFAULT_DEPENDENCY_PATH = DEFAULT_SUMMARY_DIR / "dependency_correlations.csv"
 DEFAULT_PAIRWISE_PATH = DEFAULT_SUMMARY_DIR / "categorical_pairwise_summary.csv"
 MISSING_LABEL = "__MISSING__"
 OUTCOME_COLUMN = "esbl_status"
+INTEGER_CONTINUOUS_VARIABLES = {"imd_decile"}
 
 QUANTILE_COLUMNS = (
     ("min", 0.00),
@@ -182,7 +183,11 @@ def continuous_sample(
 
     for probability in probabilities:
         value = interpolate_quantiles(summary, probability)
-        if dtype.startswith("int"):
+        integer_valued = (
+            dtype.startswith("int")
+            or summary["variable"] in INTEGER_CONTINUOUS_VARIABLES
+        )
+        if integer_valued:
             value = int(round(value))
         else:
             value = round(value, 4)
