@@ -7,7 +7,7 @@ import argparse
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INPUT_DATA_PATH = PROJECT_ROOT / "data" / 'synthetic_data.csv'
-OUTPUT_DIRECTORY = PROJECT_ROOT / "data" / "processed"
+OUTPUT_DIRECTORY = PROJECT_ROOT / "data" / "splits"
 
 TEST_SIZE = 0.2  # Proportion of the dataset to include in the test split
 RANDOM_STATE = 29  # Random seed for reproducibility
@@ -237,7 +237,6 @@ def save_split(train_data, test_data, output_dir=OUTPUT_DIRECTORY, split_type='r
         raise
     
 if __name__ == "__main__":
-
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_file", default=INPUT_DATA_PATH, help="Path to the input CSV file")
