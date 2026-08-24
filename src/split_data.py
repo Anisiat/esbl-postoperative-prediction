@@ -1,8 +1,13 @@
+import argparse
 import logging
 from pathlib import Path
+
 import pandas as pd
+from rich.console import Console
+from rich.logging import RichHandler
+from rich.markup import escape
+from rich.table import Table
 from sklearn.model_selection import train_test_split
-import argparse
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -12,6 +17,68 @@ OUTPUT_DIRECTORY = PROJECT_ROOT / "data" / "splits"
 TEST_SIZE = 0.2  # Proportion of the dataset to include in the test split
 RANDOM_STATE = 29  # Random seed for reproducibility
 TARGET_COLUMN = 'esbl_status'  # Name of the target column in the dataset
+RICH_MARKUP = {"markup": True}
+
+
+def configure_terminal_logging() -> None:
+    """Configure clear, colour-coded logging for this command-line script."""
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(message)s",
+        datefmt="%H:%M:%S",
+        handlers=[
+            RichHandler(
+                rich_tracebacks=True,
+                show_time=True,
+                show_level=True,
+                show_path=False,
+                markup=False,
+            )
+        ],
+        force=True,
+    )
+
+
+def log_section(title: str) -> None:
+    """Write a visually distinct section heading to the terminal."""
+
+    logging.info(
+        "[bold cyan]-- %s --[/bold cyan]",
+        escape(title),
+        extra=RICH_MARKUP,
+    )
+
+
+def display_split_statistics(split_stats: dict) -> None:
+    """Display train/test statistics in a compact Rich table."""
+
+    labels = {
+        "training_rows": "Training rows",
+        "test_rows": "Test rows",
+        "training_patients": "Training patients",
+        "test_patients": "Test patients",
+        "training_esbl_prevalence": "Training ESBL prevalence",
+        "test_esbl_prevalence": "Test ESBL prevalence",
+    }
+
+    table = Table(
+        title="Train/Test Split Statistics",
+        title_style="bold blue",
+        header_style="bold cyan",
+        border_style="blue",
+    )
+    table.add_column("Metric")
+    table.add_column("Value", justify="right", style="green")
+
+    for key, value in split_stats.items():
+        display_value = (
+            f"{value:.2%}" if key.endswith("_prevalence") else str(value)
+        )
+        table.add_row(labels.get(key, key.replace("_", " ").title()), display_value)
+
+    Console().print(table)
+
 
 def load_data(input_file, target_column=TARGET_COLUMN):
     """Read the input CSV file into a pandas DataFrame."""
@@ -244,18 +311,34 @@ if __name__ == "__main__":
     parser.add_argument('--split_type', choices = ('random', 'temporal'), default='random', help="Type of split to perform: 'random' or 'temporal'")
     args = parser.parse_args()
 
-    logging.basicConfig(level=logging.INFO)
+    configure_terminal_logging()
+
+    logging.info(
+        "[bold blue]ESBL train/test data split[/bold blue]",
+        extra=RICH_MARKUP,
+    )
+    logging.info("Input file : %s", args.input_file)
+    logging.info("Split type : %s", args.split_type)
+    logging.info("Test size  : %.0f%%", args.test_size * 100)
+
+    log_section("Load data")
     data = load_data(args.input_file)
 
+    log_section("Create train/test split")
     train_data, test_data = split_data(data, test_size=args.test_size, split_type=args.split_type)
 
+    log_section("Validate split")
     split_stats = validate_split(data, train_data, test_data, temporal_split=(args.split_type == 'temporal'))
 
-    print("Train/Test Split Statistics:")
-    for key, value in split_stats.items():
-        print(f"{key}: {value}")    
+    display_split_statistics(split_stats)
 
+    log_section("Save split")
     save_split(train_data, test_data, split_type=args.split_type)
+
+    logging.info(
+        "[bold green]Data split completed successfully.[/bold green]",
+        extra=RICH_MARKUP,
+    )
 
 
  

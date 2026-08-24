@@ -1,25 +1,53 @@
 import argparse
-import pandas as pd
 import logging
 from pathlib import Path
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.impute import SimpleImputer
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
+
 import joblib
+import pandas as pd
+from rich.logging import RichHandler
+from rich.markup import escape
+from sklearn.compose import ColumnTransformer
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer, SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 
 INPUT_DIRECTORY = Path(__file__).resolve().parents[1] / "data" / 'splits'
 OUTPUT_DIRECTORY = Path(__file__).resolve().parents[1] / "data" / 'model_ready'
 ID_COLUMNS = ['subject', 'admission_date', 'infection_id']  # Columns to be dropped from features
+RICH_MARKUP = {"markup": True}
 
-# set logging to info level
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(message)s",
-)
+
+def configure_terminal_logging() -> None:
+    """Configure clear, colour-coded logging for this command-line script."""
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(message)s",
+        datefmt="%H:%M:%S",
+        handlers=[
+            RichHandler(
+                rich_tracebacks=True,
+                show_time=True,
+                show_level=True,
+                show_path=False,
+                markup=False,
+            )
+        ],
+        force=True,
+    )
+
+
+def log_section(title: str) -> None:
+    """Write a visually distinct section heading to the terminal."""
+
+    logging.info(
+        "[bold cyan]-- %s --[/bold cyan]",
+        escape(title),
+        extra=RICH_MARKUP,
+    )
+
 
 def load_data(input_directory, split_type = 'random', target_column = 'esbl_status') -> tuple[pd.DataFrame, pd.DataFrame]:
 
@@ -84,7 +112,7 @@ def get_features_target(data: pd.DataFrame, target_column: str = 'esbl_status', 
 
 
 
-def get_numerical_categorical_features(X: pd.DataFrame) -> tuple[list, list, list]:
+def get_feature_types(X: pd.DataFrame) -> tuple[list, list, list]:
     """
     Identify numerical, categorical, and binary features in the dataset.
 
@@ -205,14 +233,32 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    train_data, test_data = load_data(INPUT_DIRECTORY, args.split_type)
+    configure_terminal_logging()
 
+    logging.info(
+        "[bold blue]ESBL data preprocessing[/bold blue]",
+        extra=RICH_MARKUP,
+    )
+    logging.info("Input directory  : %s", INPUT_DIRECTORY)
+    logging.info("Output directory : %s", OUTPUT_DIRECTORY)
+    logging.info("Data split       : %s", args.split_type)
+
+    log_section("Load data")
+    train_data, test_data = load_data(INPUT_DIRECTORY, args.split_type)
+    logging.info("Training rows : %d", len(train_data))
+    logging.info("Test rows     : %d", len(test_data))
+
+    log_section("Prepare features")
     X_train, y_train = get_features_target(train_data)
     X_test, y_test = get_features_target(test_data)
 
-    numerical, categorical, binary = get_numerical_categorical_features(X_train)
+    numerical, categorical, binary = get_feature_types(X_train)
+    logging.info("Numerical features   : %d", len(numerical))
+    logging.info("Categorical features : %d", len(categorical))
+    logging.info("Binary features      : %d", len(binary))
     preprocessor = build_preprocessor(numerical, categorical, binary)
 
+    log_section("Transform features")
     X_train_processed, X_test_processed = preprocess_features(
         X_train, X_test, preprocessor
     )
@@ -242,6 +288,7 @@ if __name__ == "__main__":
     assert list(X_train_processed.columns) == list(X_test_processed.columns)
 
     # save the processed data to the output directory
+    log_section("Save processed data")
     OUTPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
     X_train_processed.to_csv(OUTPUT_DIRECTORY / f"X_train_processed_{args.split_type}.csv", index=False)
     X_test_processed.to_csv(OUTPUT_DIRECTORY / f"X_test_processed_{args.split_type}.csv", index=False)
@@ -265,8 +312,8 @@ if __name__ == "__main__":
 
 
     logging.info(
-    f"Processed training shape: {X_train_processed.shape}"
+        "[bold green]Data preprocessing completed successfully.[/bold green]",
+        extra=RICH_MARKUP,
     )
-    logging.info(
-        f"Processed test shape: {X_test_processed.shape}"
-    )
+    logging.info("Processed training shape : %s", X_train_processed.shape)
+    logging.info("Processed test shape     : %s", X_test_processed.shape)
