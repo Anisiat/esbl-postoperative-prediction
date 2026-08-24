@@ -140,6 +140,31 @@ risk threshold.
 8.  Develop the secondary clinical-utility analysis.
 9. SHAP 
 
+
+## Preprocessing architecutre 
+
+RAW SPLIT DATA
+      │
+      ├──────── IDs ─────────────→ metadata
+      │
+      ├──────── ESBL status ─────→ y
+      │
+      └──────── predictors ──────→ X
+                                     │
+                              identify feature type
+                                     │
+                    ┌────────────────┼────────────────┐
+                    ↓                ↓                ↓
+               numerical       categorical         binary
+                    ↓                ↓                ↓
+              iterative          missing         most-frequent
+              imputation         category          imputation
+                    ↓                ↓                ↓
+                 scale           one-hot       missing indicator
+                    └────────────────┬────────────────┘
+                                     ↓
+                              X_processed
+                              
 ## Other ideas 
 
 Sensitivity analysis
