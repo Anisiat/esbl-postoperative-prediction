@@ -1,0 +1,11 @@
+SUBJECT,SPELL_IDENTIFIER,DIAGNOSIS_DATE,DIAGNOSIS_CODE_ICD,DIAGNOSIS_CODE_SNOMED,DIAGNOSIS_DESC_ICD,DIAGNOSIS_DESC_SNOMED
+P001,S001,,e119,none,type 2 diabetes mellitus,none
+P001,S002,,i509,none,"heart failure, unspecified",none
+P001,S003,2022-03-15,n179,none,"acute kidney failure, unspecified",none
+P002,S010,,j449,none,chronic obstructive pulmonary disease,none
+P002,S011,,n390,none,"urinary tract infection, site not specified",none
+P003,S019,2020-06-01,i639,230690007,"cerebral infarction, unspecified",stroke
+P003,S020,,e119,none,type 2 diabetes mellitus,none
+P003,S021,2024-01-08,c787,none,secondary malignant neoplasm of liver,none
+P004,S029,,,427571000,,lumbosacral radiculoplexus neuropathy due to type 1 diabetes mellitus
+P005,S040,,k704,none,alcoholic hepatic failure,none

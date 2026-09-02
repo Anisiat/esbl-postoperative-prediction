@@ -174,3 +174,5 @@ Repeat the ML comparison using LASSO-selected features only as opposed to all cl
 
 ## TO DO 
 
+- think about cathetarisation central line insertion etc    
+- run a feature-set sensitivity analysis with the 17 individual flags. If the individual conditions materially improve CV performance, then you have evidence that disease type matters beyond total burden.

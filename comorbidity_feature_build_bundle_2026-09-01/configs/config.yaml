@@ -1,0 +1,14 @@
+paths:
+  raw_diagnoses: ../data/raw/diagnoses.csv
+  raw_problems: ../data/raw/problems.csv
+  raw_prescriptions: ../data/raw/prescriptions.csv
+  raw_surgery_microbiology: ../data/raw/surgery_microbiology.csv
+  cleaned_diagnoses: ../data/synthetic_data_cleaned/diagnoses_cleaned.csv
+  cleaned_problems: ../data/synthetic_data_cleaned/problems_cleaned.csv
+  cleaned_prescriptions: ../data/synthetic_data_cleaned/prescriptions_cleaned.csv
+  infection_eps: ../data/interim/infection_eps.csv
+  comorbidity_features: ../data/interim/comorbidity_features.csv
+  charlson_icd10_mapping: charlson_icd10_mapping.csv
+  charlson_snomed_mapping: charlson_snomed_mapping.csv
+  charlson_medication_mapping: charlson_medication_mapping.csv
+  analysis_dataset: ../data/processed/analysis_dataset.csv

@@ -1,0 +1,7 @@
+subject,medication_name_short,therapeutical_class,order_dt_tm,admission_medicine_y_n,gp_to_continue
+P001,metformin,metabolic agents,2021-10-01 08:00:00,True,True
+P001,furosemide,cardiovascular agents,2021-11-10 09:00:00,True,True
+P002,salbutamol,respiratory agents,2022-12-20 10:00:00,True,True
+P003,aspirin,cardiovascular agents,2023-06-01 12:00:00,False,False
+P004,insulin soluble,metabolic agents,2023-01-15 13:00:00,True,True
+P005,amlodipine,cardiovascular agents,2024-09-01 11:00:00,True,True

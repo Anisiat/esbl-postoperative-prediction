@@ -1,0 +1,7 @@
+subject,infection_id,myocardial_infarction,congestive_heart_failure,peripheral_vascular_disease,cerebrovascular_disease,dementia,chronic_pulmonary_disease,rheumatic_disease,peptic_ulcer_disease,mild_liver_disease,diabetes_without_complication,diabetes_with_complication,hemiplegia_or_paraplegia,renal_disease,malignancy,moderate_or_severe_liver_disease,metastatic_solid_tumor,aids_hiv,cci_score
+P001,INF001,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2
+P002,INF002,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+P003,INF003,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,2
+P003,INF004,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,2
+P004,INF005,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2
+P005,INF006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,3
